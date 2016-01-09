@@ -12,31 +12,15 @@ Introduction
 based on ASP.NET 5 and `ExtCore framework <https://github.com/ExtCore/ExtCore>`_. It is built using
 the best and the most modern tools and languages (Visual Studio 2015, C#, TypeScript, SCSS etc). Join our team!
 
-Platformus is completely modular and currently consists of 8 extensions:
+Few Facts About Platformus
+**************************
 
-* Platformus.Barebone;
-* Platformus.Configuration;
-* Platformus.Security;
-* Platformus.Static;
-* Platformus.Globalization;
-* Platformus.Content;
-* Platformus.Navigation;
-* Platformus.Forms.
-
-Each extension may consist of several projects:
-
-* Platformus.X;
-* Platformus.X.Data.Models;
-* Platformus.X.Data.Abstractions;
-* Platformus.X.Data.SpecificStorageA;
-* Platformus.X.Data.SpecificStorageB;
-* Platformus.X.Data.SpecificStorageC;
-* Platformus.X.Frontend;
-* Platformus.X.Backend;
-* etc.
-
-Using the features of the underlying ExtCore framework you can easily create your own extensions
-to extend the functionality of Platformus.
+1. It runs on Windows, Mac and Linux.
+2. It is completely modular and extendable. Using the features of the underlying ExtCore framework
+you can easily create your own extensions to extend its functionality. 
+3. Multicultural and multilingual.
+4. It is fast, flexible and easy to use. You can describe even complicated entities and their relationships
+without writing any code!
 
 Contents
 --------
@@ -45,4 +29,5 @@ Contents
    :titlesonly:
 
    basic_concepts/index
+   quick_start/extensions
    quick_start/index
