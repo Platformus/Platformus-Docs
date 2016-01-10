@@ -1,6 +1,6 @@
 ﻿Platformus.Barebone
 ===================
 
-This is the basic extension that contains such things as base controller class, base view component
-class and base view model class, backend UI and controls etc. Every other extension uses Platformus.Barebone
-to have unified look and behavior.
+This fundamental extension provides base classes for controllers, view components, view models etc. Also it
+provides data and storage support, base backend with UI and controls etc. Every other extension can use
+Platformus.Barebone to have unified look and behavior.

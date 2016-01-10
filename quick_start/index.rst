@@ -4,4 +4,5 @@
 .. toctree::
    :titlesonly:
 
+   walkthrough
    samples
