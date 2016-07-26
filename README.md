@@ -1,1 +1,1 @@
-# Docs for Platformus 1.0.0-alpha7
+# Docs for Platformus 1.0.0-alpha8
