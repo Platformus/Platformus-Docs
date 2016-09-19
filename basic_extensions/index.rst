@@ -1,7 +1,5 @@
-﻿Extensions
-==========
-
-Currently Platformus consists of 8 extensions:
+﻿Basic Extensions
+================
 
 .. toctree::
    :titlesonly:

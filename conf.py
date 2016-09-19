@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Platformus documentation build configuration file, created by
+# Platformus CMS documentation build configuration file, created by
 # sphinx-quickstart on Thu Aug 27 14:17:59 2015.
 #
 # This file is execfile()d with the current directory set to its
@@ -46,7 +46,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Platformus'
+project = u'Platformus CMS'
 copyright = u'2015, Dmitry Sikorsky'
 author = u'Dmitry Sikorsky'
 
