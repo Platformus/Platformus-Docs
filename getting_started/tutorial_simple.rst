@@ -16,6 +16,7 @@ application (even without any programming skills), including SQLite database and
 basic content. It can be run locally or on a web server and configured using the backend. You
 still can use custom or third-party extensions but if you want to have more control over the
 process consider using the next option.
+
 2. Create your own host web application. In this case you will have to manually add dependencies
 on Platformus packages, write some code and create configuration file, database etc.
 
