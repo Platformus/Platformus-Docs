@@ -37,13 +37,10 @@ Backend Screenshots
 -------------------
 
 .. image:: http://platformus.net/files/list_of_objects.png
-
 *List of objects*
 
 .. image:: http://platformus.net/files/edit_object.png
-
 *Edit object*
 
 .. image:: http://platformus.net/files/list_menus.png
-
 *List menus*

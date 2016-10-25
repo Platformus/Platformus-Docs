@@ -22,4 +22,5 @@ Contents
 
    introduction/index
    getting_started/index
+   fundamentals/index
    extensions/index
