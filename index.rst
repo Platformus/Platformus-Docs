@@ -12,7 +12,7 @@ Platformus CMS
 
 `Platformus <https://github.com/Platformus/Platformus>`_ is free, open source and cross-platform CMS
 based on ASP.NET Core and `ExtCore framework <https://github.com/ExtCore/ExtCore>`_. It is built using
-the best and the most modern tools and languages (Visual Studio 2015, C#, TypeScript, SCSS etc). Join our team!
+the best and the most modern tools and languages (Visual Studio 2015, C# etc). Join our team!
 
 Contents
 --------

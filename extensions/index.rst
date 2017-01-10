@@ -5,10 +5,10 @@
    :titlesonly:
 
    platformus_barebone
-   platformus_configuration
+   platformus_configurations
    platformus_security
-   platformus_static
+   platformus_filemanager
    platformus_globalization
-   platformus_content
-   platformus_navigation
+   platformus_domain
+   platformus_menus
    platformus_forms
