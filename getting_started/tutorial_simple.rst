@@ -54,27 +54,27 @@ Empty project is created.
 
 Open project.json file and add dependencies on the following packages:
 
-* Platformus.Configurations, version 1.0.0-alpha13;
-* Platformus.Configurations.Backend, version 1.0.0-alpha13;
-* Platformus.Configurations.Data.EntityFramework.Sqlite, version 1.0.0-alpha13;
-* Platformus.Domain.Api, version 1.0.0-alpha13;
-* Platformus.Domain.Backend, version 1.0.0-alpha13;
-* Platformus.Domain.Data.EntityFramework.Sqlite, version 1.0.0-alpha13;
-* Platformus.Domain.Frontend, version 1.0.0-alpha13;
-* Platformus.FileManager.Backend, version 1.0.0-alpha13;
-* Platformus.FileManager.Data.EntityFramework.Sqlite, version 1.0.0-alpha13;
-* Platformus.Forms.Backend, version 1.0.0-alpha13;
-* Platformus.Forms.Data.EntityFramework.Sqlite, version 1.0.0-alpha13;
-* Platformus.Forms.Frontend, version 1.0.0-alpha13;
-* Platformus.Globalization.Backend, version 1.0.0-alpha13;
-* Platformus.Globalization.Data.EntityFramework.Sqlite, version 1.0.0-alpha13;
-* Platformus.Globalization.Frontend, version 1.0.0-alpha13;
-* Platformus.Menus.Backend, version 1.0.0-alpha13;
-* Platformus.Menus.Data.EntityFramework.Sqlite, version 1.0.0-alpha13;
-* Platformus.Menus.Frontend, version 1.0.0-alpha13;
-* Platformus.Security.Backend, version 1.0.0-alpha13;
-* Platformus.Security.Data.EntityFramework.Sqlite, version 1.0.0-alpha13;
-* Platformus.WebApplication, version 1.0.0-alpha13.
+* Platformus.Configurations, version 1.0.0-alpha14;
+* Platformus.Configurations.Backend, version 1.0.0-alpha14;
+* Platformus.Configurations.Data.EntityFramework.Sqlite, version 1.0.0-alpha14;
+* Platformus.Domain.Api, version 1.0.0-alpha14;
+* Platformus.Domain.Backend, version 1.0.0-alpha14;
+* Platformus.Domain.Data.EntityFramework.Sqlite, version 1.0.0-alpha14;
+* Platformus.Domain.Frontend, version 1.0.0-alpha14;
+* Platformus.FileManager.Backend, version 1.0.0-alpha14;
+* Platformus.FileManager.Data.EntityFramework.Sqlite, version 1.0.0-alpha14;
+* Platformus.Forms.Backend, version 1.0.0-alpha14;
+* Platformus.Forms.Data.EntityFramework.Sqlite, version 1.0.0-alpha14;
+* Platformus.Forms.Frontend, version 1.0.0-alpha14;
+* Platformus.Globalization.Backend, version 1.0.0-alpha14;
+* Platformus.Globalization.Data.EntityFramework.Sqlite, version 1.0.0-alpha14;
+* Platformus.Globalization.Frontend, version 1.0.0-alpha14;
+* Platformus.Menus.Backend, version 1.0.0-alpha14;
+* Platformus.Menus.Data.EntityFramework.Sqlite, version 1.0.0-alpha14;
+* Platformus.Menus.Frontend, version 1.0.0-alpha14;
+* Platformus.Security.Backend, version 1.0.0-alpha14;
+* Platformus.Security.Data.EntityFramework.Sqlite, version 1.0.0-alpha14;
+* Platformus.WebApplication, version 1.0.0-alpha14.
 
 After that ``dependencies`` section of your project.json file should look like this:
 
@@ -89,25 +89,25 @@ After that ``dependencies`` section of your project.json file should look like t
         "version": "1.1.0",
         "type": "platform"
       },
-      "Platformus.Configurations": "1.0.0-alpha13",
-      "Platformus.Configurations.Backend": "1.0.0-alpha13",
-      "Platformus.Configurations.Data.EntityFramework.Sqlite": "1.0.0-alpha13",
-      "Platformus.Domain.Api": "1.0.0-alpha13",
-      "Platformus.Domain.Backend": "1.0.0-alpha13",
-      "Platformus.Domain.Data.EntityFramework.Sqlite": "1.0.0-alpha13",
-      "Platformus.Domain.Frontend": "1.0.0-alpha13",
-      "Platformus.FileManager.Backend": "1.0.0-alpha13",
-      "Platformus.FileManager.Data.EntityFramework.Sqlite": "1.0.0-alpha13",
-      "Platformus.Forms.Backend": "1.0.0-alpha13",
-      "Platformus.Forms.Data.EntityFramework.Sqlite": "1.0.0-alpha13",
-      "Platformus.Forms.Frontend": "1.0.0-alpha13",
-      "Platformus.Globalization.Backend": "1.0.0-alpha13",
-      "Platformus.Globalization.Data.EntityFramework.Sqlite": "1.0.0-alpha13",
-      "Platformus.Globalization.Frontend": "1.0.0-alpha13",
-      "Platformus.Menus.Backend": "1.0.0-alpha13",
-      "Platformus.Menus.Data.EntityFramework.Sqlite": "1.0.0-alpha13",
-      "Platformus.Menus.Frontend": "1.0.0-alpha13",
-      "Platformus.Security.Backend": "1.0.0-alpha13",
-      "Platformus.Security.Data.EntityFramework.Sqlite": "1.0.0-alpha13",
-      "Platformus.WebApplication": "1.0.0-alpha13"
+      "Platformus.Configurations": "1.0.0-alpha14",
+      "Platformus.Configurations.Backend": "1.0.0-alpha14",
+      "Platformus.Configurations.Data.EntityFramework.Sqlite": "1.0.0-alpha14",
+      "Platformus.Domain.Api": "1.0.0-alpha14",
+      "Platformus.Domain.Backend": "1.0.0-alpha14",
+      "Platformus.Domain.Data.EntityFramework.Sqlite": "1.0.0-alpha14",
+      "Platformus.Domain.Frontend": "1.0.0-alpha14",
+      "Platformus.FileManager.Backend": "1.0.0-alpha14",
+      "Platformus.FileManager.Data.EntityFramework.Sqlite": "1.0.0-alpha14",
+      "Platformus.Forms.Backend": "1.0.0-alpha14",
+      "Platformus.Forms.Data.EntityFramework.Sqlite": "1.0.0-alpha14",
+      "Platformus.Forms.Frontend": "1.0.0-alpha14",
+      "Platformus.Globalization.Backend": "1.0.0-alpha14",
+      "Platformus.Globalization.Data.EntityFramework.Sqlite": "1.0.0-alpha14",
+      "Platformus.Globalization.Frontend": "1.0.0-alpha14",
+      "Platformus.Menus.Backend": "1.0.0-alpha14",
+      "Platformus.Menus.Data.EntityFramework.Sqlite": "1.0.0-alpha14",
+      "Platformus.Menus.Frontend": "1.0.0-alpha14",
+      "Platformus.Security.Backend": "1.0.0-alpha14",
+      "Platformus.Security.Data.EntityFramework.Sqlite": "1.0.0-alpha14",
+      "Platformus.WebApplication": "1.0.0-alpha14"
     }
