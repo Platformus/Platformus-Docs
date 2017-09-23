@@ -10,8 +10,8 @@ the embedded Kestrel web server, or using the standalone web servers like
 .. code-block:: bat
     :emphasize-lines: 1,2
     
-    cd *path to the extracted archive*
-	dotnet WebApplication.dll
+    cd path to the extracted archive
+    dotnet WebApplication.dll
 
 As the result, you should see the following output:
 
