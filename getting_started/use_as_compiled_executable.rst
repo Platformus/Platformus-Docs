@@ -1,10 +1,10 @@
-﻿Installation
-============
+﻿Use as Compiled Executable
+==========================
 
 1. Download the latest Platformus archive from the `website <http://platformus.net/en/download>`_.
 2. Extract it to a web server (as any other ASP.NET Core web application, Platformus can run using
 the embedded Kestrel web server, or using the standalone web servers like
-`Apache, Nginx, or IIS <https://docs.microsoft.com/en-us/aspnet/core/publishing/>`_.
+`Apache, Nginx, or IIS <https://docs.microsoft.com/en-us/aspnet/core/publishing/>`_).
 3. Run Platformus using the following commands:
 
 .. code-block:: bat
@@ -29,7 +29,7 @@ Click the :guilabel:`Install now` button.
 
 .. image:: /images/getting_started/installation/3.png
 
-Scenario may include packages, storage scripts, view, scripts, styles and any other content.
+Scenario may include packages, storage scripts, views, scripts, styles, and any other content.
 
 Click the :guilabel:`Next` button.
 
