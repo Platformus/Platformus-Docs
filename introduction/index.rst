@@ -5,6 +5,10 @@ Platformus is complex and multipurpose content management system. You can descri
 and it is totally separated from its representation, so you can represent it using the views, API,
 or any other way you want.
 
+It can run on Linux, Mac, and Windows (also is can run on Azure cloud). It supports different storage types
+(PostgreSQL, SQLite, SQL Server, Azure SQL Database). It is modular, multilingual and multicultural.
+And it is open-source and absolutely free.
+
 Data Model
 ----------
 
