@@ -4,4 +4,4 @@
 .. toctree::
    :titlesonly:
 
-   data_model
+   
