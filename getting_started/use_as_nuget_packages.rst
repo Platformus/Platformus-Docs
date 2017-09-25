@@ -11,30 +11,30 @@
 
 .. image:: /images/getting_started/use_as_nuget_packages/3.png
 
-  * Platformus.Configurations.Backend;
-  * Platformus.Configurations.Data.EntityFramework.Sqlite;
-  * Platformus.Designers.Backend;
-  * Platformus.Domain.Api;
-  * Platformus.Domain.Backend;
-  * Platformus.Domain.Data.EntityFramework.Sqlite;
-  * Platformus.Domain.Frontend;
-  * Platformus.FileManager.Backend;
-  * Platformus.FileManager.Data.EntityFramework.Sqlite;
-  * Platformus.Forms.Backend;
-  * Platformus.Forms.Data.EntityFramework.Sqlite;
-  * Platformus.Forms.Frontend;
-  * Platformus.Globalization.Backend;
-  * Platformus.Globalization.Data.EntityFramework.Sqlite;
-  * Platformus.Globalization.Frontend;
-  * Platformus.Menus.Backend;
-  * Platformus.Menus.Data.EntityFramework.Sqlite;
-  * Platformus.Menus.Frontend;
-  * Platformus.Routing.Backend;
-  * Platformus.Routing.Data.EntityFramework.Sqlite;
-  * Platformus.Routing.Frontend;
-  * Platformus.Security.Backend;
-  * Platformus.Security.Data.EntityFramework.Sqlite;
-  * Platformus.WebApplication.
+* Platformus.Configurations.Backend;
+* Platformus.Configurations.Data.EntityFramework.Sqlite;
+* Platformus.Designers.Backend;
+* Platformus.Domain.Api;
+* Platformus.Domain.Backend;
+* Platformus.Domain.Data.EntityFramework.Sqlite;
+* Platformus.Domain.Frontend;
+* Platformus.FileManager.Backend;
+* Platformus.FileManager.Data.EntityFramework.Sqlite;
+* Platformus.Forms.Backend;
+* Platformus.Forms.Data.EntityFramework.Sqlite;
+* Platformus.Forms.Frontend;
+* Platformus.Globalization.Backend;
+* Platformus.Globalization.Data.EntityFramework.Sqlite;
+* Platformus.Globalization.Frontend;
+* Platformus.Menus.Backend;
+* Platformus.Menus.Data.EntityFramework.Sqlite;
+* Platformus.Menus.Frontend;
+* Platformus.Routing.Backend;
+* Platformus.Routing.Data.EntityFramework.Sqlite;
+* Platformus.Routing.Frontend;
+* Platformus.Security.Backend;
+* Platformus.Security.Data.EntityFramework.Sqlite;
+* Platformus.WebApplication.
 
 Or you can add them manually by editing .csproj file of your web application project:
 
