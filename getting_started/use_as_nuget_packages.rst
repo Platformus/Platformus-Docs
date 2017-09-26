@@ -1,6 +1,10 @@
 ﻿Use as NuGet Packages
 =====================
 
+This is the most convenient way to use the Platformus. Compilation is fast, you can easily add
+your own classes (for example, to write custom implementations of the ``IEndpoint``, ``IDataSource``, or other interfaces).
+Also, you can update Platformus just using the NuGet Package Manager.
+
 1. Create an ASP.NET Core web application (or use an existing one):
 
 .. image:: /images/getting_started/use_as_nuget_packages/1.png

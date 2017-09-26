@@ -1,6 +1,9 @@
 ﻿Use as Compiled Executable
 ==========================
 
+It is the simplest way to use Platformus. Just download and run. You can still add your own
+classes and logic, but you need to compile the packages for that and copy them to the extensions folder.
+
 1. Download the latest Platformus archive from the `website <http://platformus.net/en/download>`_.
 2. Extract it to a web server (as any other ASP.NET Core web application, Platformus can run using
 the embedded Kestrel web server, or using the standalone web servers like
