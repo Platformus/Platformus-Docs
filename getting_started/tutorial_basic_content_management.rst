@@ -4,7 +4,7 @@
 We have working Platformus-based web application. Let’s assume it is the default personal website
 that goes with the installer. Now we are going to see how to add the blog section on that website.
 
-First of all, we need the blog post page, right? Each post should have the same properties as the regular page,
+First of all, we need the blog post pages, right? Each blog post post should have the same properties as the regular page,
 but also it needs preview (the small piece of content), image, and creation date. In the Platformus context,
 all the pages are objects which are described by the classes. Therefore, to create new type of page
 (and new type of object) we need to create the corresponding class first.
@@ -68,8 +68,104 @@ the :guilabel:`Save` button. New blog post is created:
 
 .. image:: /images/getting_started/tutorial_basic_content_management/8.png
 
-There are only the properties is displayed which members have :guilabel:`Is property visible in list` checkbox checked.
+There are only the properties is displayed whose members have :guilabel:`Is property visible in list` checkbox checked.
 
+Now we have our blog post page object created. We can use different ways to present it (view, API, plain text and so on),
+but now let’s use old good view for that.
 
+Go to the Development/Views/Default section. The list of the views from the Default subdirectory is displayed (by default,
+all the requests are handled by the ``DefaultController``, that’s why subdirectory has that name; you can change the way
+requests are handled by the Platformus, we will talk about that in the
+`Advanced <http://docs.platformus.net/en/latest/advanced/index.html>`_ section):
 
-Coming soon...
+.. image:: /images/getting_started/tutorial_basic_content_management/9.png
+
+Click the :guilabel:`Create view` button and fill the fields as shown below:
+
+.. image:: /images/getting_started/tutorial_basic_content_management/10.png
+
+The HTML ifself is very simple. You can see that all the data comes from the view model. There is the ``Page`` property
+which contains all the properties of our blog post page object that we have described by the class members
+(and property names are the same as the member codes). This ``Page`` property is created for us by the corresponding data source.
+If your view needs more different data in order to be rendered, just add more data sources that will provide this data
+to the view model. Data sources are C# classes that implement the
+`IDataSource <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Routing/DataSources/IDataSource.cs#L10>`_
+interface, you can create your own ones. They can provide data in any way you need: to load some objects,
+to take it from the web services (weather forecast?), or to return some hardcoded values. All the data sources
+that are used to process the particular request are grouped inside the endpoint. Endpoints process the requests
+and return response in the Platformus (as well as data sources, they are C# classes that implement the
+`IEndpoint <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Routing/Endpoints/IEndpoint.cs#L11>`_
+interface). We will see how this all works a bit later in this article. Now click the :guilabel:`Save` button.
+The view is created:
+
+.. image:: /images/getting_started/tutorial_basic_content_management/11.png
+
+We have described and created the content, we have also created the presentation for that content. The last thing we must do
+to make it all work is to create the endpoint and the data source. Go to the Development/Endpoints section.
+Click the :guilabel:`Create endpoint` button and fill the fields as shown below:
+
+.. image:: /images/getting_started/tutorial_basic_content_management/12.png
+
+Endpoints are important. They define how your Platformus-based web application processes the HTTP requests.
+By default, if there are no endpoints configured, you will have 404 responses on every request. By specifying the URL template
+for the endpoint, you tell the instance of the
+`IEndpointResolver <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Routing/EndpointResolvers/IEndpointResolver.cs#L10>`_
+interface which endpoint it should use to process the particular request (you can use {*url} one to handle all the requests).
+It is done the similar way as the MVC routes configuration (endpoint is something like route and controller at once;
+endpoints support URL parameters too). Also, you can specify which C# class (implementation of the ``IEndpoint`` interface)
+will handle the request. You can write your own implementations of that interface and use them to handle the requests
+(or you can take some third-party one and copy the DLL file with it to the Platformus extensions folder and use it).
+Specify the view name that we have created earlier that will be used by this endpoint to render the response.
+Click the :guilabel:`Save` button to create our new endpoint:
+
+.. image:: /images/getting_started/tutorial_basic_content_management/13.png
+
+The last thing we have to do is to add the data source that will load the blog post page object by the value of the ``URL`` property
+and assign it to the view model’s ``Page`` property (that will also be created). Click the :guilabel:`Data sources` link and then the
+:guilabel:`Create data source` button. Fill all the fields as shown below and click the :guilabel:`Save` button:
+
+.. image:: /images/getting_started/tutorial_basic_content_management/14.png
+
+That’s it. Now we can test how our blog post page is displayed. Navigate to
+`http://localhost:5000/en/blog/my-first-blog-post <http://localhost:5000/en/blog/my-first-blog-post>`_:
+
+.. image:: /images/getting_started/tutorial_basic_content_management/15.png
+
+It works! But we also need to have a page with all the blog posts. We will make it quick, because now you know enough.
+This page will display the blog posts, so we don’t need to create any new class (just create the regular page with
+the URL property value set to /blog). All we need is to create new view, endpoint and two data sources for it.
+Let’s start from the view:
+
+.. image:: /images/getting_started/tutorial_basic_content_management/16.png
+
+As you can see, we will have a data source that will provide the ``BlogPosts`` view model property for us.
+Also we have to create the _BlogPost partial view (inside the Shared folder):
+
+.. image:: /images/getting_started/tutorial_basic_content_management/17.png
+
+Now create the new endpoint (you have to have separate endpoint for each page template (or view)):
+
+.. image:: /images/getting_started/tutorial_basic_content_management/18.png
+
+Because the page that will display the list of the blog posts is the page too, add the Page data source for
+our new endpoint (the same we have done that for the previous one). It will load our regular page object that holds
+``Content`` and other properties of this page.
+
+But in order to be able to display the blog posts on this page we must add one more data source:
+
+.. image:: /images/getting_started/tutorial_basic_content_management/19.png
+
+As you can see, another C# class is selected for this data source. It provides more properties for us. For example,
+it allows to specify the class of the objects to load, to specify which their relations (and relations of the relations and so on)
+should be loaded, should we use filtering, sorting, or paging etc.
+
+Everything is done. Now you can navigate to `http://localhost:5000/en/blog <http://localhost:5000/en/blog>`_
+and see the result:
+
+.. image:: /images/getting_started/tutorial_basic_content_management/20.png
+
+Click the image to go to the blog post page. You can add the new menu item in the menu to have your blog there.
+
+In the next tutorial we will see how to display comments on the blog post page and how to create them using the forms,
+user input and Platformus object mappers.
+
