@@ -7,4 +7,4 @@
    objects
    menus
    forms
-   filemanager
+   file_manager

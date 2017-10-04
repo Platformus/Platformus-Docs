@@ -2,7 +2,7 @@
 =====
 
 Menus are used for navigation on the frontend. You can manage them (add, edit, and delete) from the backend
-using the Content/Menus section:
+using the :guilabel:`Content/Menus` section:
 
 .. image:: /images/fundamentals/content/menus/1.png
 

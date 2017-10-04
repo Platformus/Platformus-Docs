@@ -10,7 +10,7 @@ all the pages are objects which are described by the classes. Therefore, to crea
 (and new type of object) we need to create the corresponding class first.
 
 Go and login to the backend (navigate to `http://localhost:5000/backend/ <http://localhost:5000/backend/>`_)
-and then go to the Administration/Classes section. There are already two classes here: ``Page`` and ``Regular Page``.
+and then go to the :guilabel:`Administration/Classes` section. There are already two classes here: ``Page`` and ``Regular Page``.
 The ``Page`` class is abstract, it means that it is used as the base class for the other ones (class copies all the members
 of its parent class). Click the :guilabel:`Members` link of the ``Page`` class to see the list of its members.
 As you can see, there are the standard page properties here, like ``URL``, ``Content``, ``Title``, ``META description``,
@@ -53,7 +53,7 @@ Our member list will look like this:
 
 .. image:: /images/getting_started/tutorial_basic_content_management/5.png
 
-That’s it, we are done with our data model for now. Let’s add some content. Go to the Content/Objects section.
+That’s it, we are done with our data model for now. Let’s add some content. Go to the :guilabel:`Content/Objects` section.
 Objects (and again, our pages are objects) are grouped by the parent classes (pluralized names are used to name the groups).
 Objects of the classes that doesn’t have parent ones go under the Others group. Our ``Blog Post Page`` class is
 already here:
@@ -104,7 +104,8 @@ We will see how this all works a bit later in this article. Now click the :guila
 
 We have described and created the content (our blog post page object), we have also created the presentation for that content
 (our view). The last thing we must do to make it all work is to create the endpoint and the data source.
-Go to the Development/Endpoints section. Click the :guilabel:`Create endpoint` button and fill the fields as shown below:
+Go to the :guilabel:`Development/Endpoints` section. Click the :guilabel:`Create endpoint` button and fill the fields
+as shown below:
 
 .. image:: /images/getting_started/tutorial_basic_content_management/12.png
 

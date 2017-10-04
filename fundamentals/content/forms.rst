@@ -2,7 +2,7 @@
 =====
 
 Forms are used to get and process user input on the frontend. You can manage them (add, edit, and delete) from the backend
-using the Content/Forms section:
+using the :guilabel:`Content/Forms` section:
 
 .. image:: /images/fundamentals/content/forms/1.png
 
