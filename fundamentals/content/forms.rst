@@ -6,7 +6,7 @@ using the :guilabel:`Content/Forms` section:
 
 .. image:: /images/fundamentals/content/forms/1.png
 
-Each form has code and localized name. :guilabel:`Produce completed forms` checkbox allows to specify whether you want
+Each form has code and localized name. The :guilabel:`Produce completed forms` checkbox allows to specify whether you want
 completed forms to be created each time user fills the form. You can review completed forms (user input) from the backend
 any time if they are created.
 

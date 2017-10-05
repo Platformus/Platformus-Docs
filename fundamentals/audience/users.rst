@@ -26,7 +26,7 @@ This information is stored using the
 objects. Each user can have different credentials, and each credential has its
 `type <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Security.Data.Entities/CredentialType.cs#L14>`_
 (it can be email and password, Facebook account, Microsoft account and so on). When user signs in,
-Platformus checks whether there is an credential with the given type, identifier and secret exists. If the credential is found,
+Platformus checks whether there is an credential with the given type, identifier, and secret exists. If the credential is found,
 corresponding user is signed in.
 
 The credential list looks like this:
