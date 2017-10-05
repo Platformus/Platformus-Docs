@@ -37,10 +37,10 @@ Data source is a C# class too. It must implement the
 `IDataSource <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Routing/DataSources/IDataSource.cs#L10>`_
 interface. You can implement this interface in your own classes and return any data you want.
 
-There are few built-in data sources. PageDataSource loads the object by its URL property value.
-ObjectsDataSource loads the objects with the specified class. Also, it supports filtegin, sorting, and paging.
-PrimaryObjectsDataSource and ForeignObjectsDataSource load the objects that are related to the one,
-which URL property value matches current request’s URL.
+There are few built-in data sources. ``PageDataSource`` loads the object by its ``URL`` property value.
+``ObjectsDataSource`` loads the objects of the specified class. Also, it supports filtegin, sorting, and paging.
+``PrimaryObjectsDataSource`` and ``ForeignObjectsDataSource`` load the objects that are related to the one,
+which ``URL`` property value matches current request’s URL (these both support filtegin, sorting, and paging too).
 
 Each data source has code and C# class name:
 
