@@ -26,7 +26,7 @@ Platformus uses authorization policies to control access to the controllers and 
 .. code-block:: cs
     :emphasize-lines: 2
 
-	[Area("Backend")]
+    [Area("Backend")]
     [Authorize(Policy = Policies.HasBrowseUsersPermission)]
     public class UsersController : Barebone.Backend.Controllers.ControllerBase { }
 
@@ -37,7 +37,7 @@ inside the ``services.AddAuthorization()`` extension method:
 .. code-block:: cs
     :emphasize-lines: 4
 
-	services.AddAuthorization(options =>
+    services.AddAuthorization(options =>
       {
         foreach (IAuthorizationPolicyProvider authorizationPolicyProvider in ExtCore.Infrastructure.ExtensionManager.GetInstances<IAuthorizationPolicyProvider>())
           options.AddPolicy(authorizationPolicyProvider.Name, authorizationPolicyProvider.GetAuthorizationPolicy());
