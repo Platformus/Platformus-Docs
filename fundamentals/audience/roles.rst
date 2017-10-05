@@ -11,7 +11,7 @@ Each role has name, code, and position. Position might be used to sort the roles
 
 .. image:: /images/fundamentals/audience/roles/2.png
 
-Also, on the Permissions tab you can assign the permissions to a role:
+Also, on the :guilabel:`Permissions` tab you can assign the permissions to a role:
 
 .. image:: /images/fundamentals/audience/roles/3.png
 
