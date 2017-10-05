@@ -1,7 +1,7 @@
 ﻿Cultures
 ========
 
-Cultures are used to specify which languages (data formats and so on) your web application supports.
+Cultures are used to specify which languages (date formats and so on) your web application supports.
 You can manage them (add, edit, and delete) from the backend using the :guilabel:`Administration/Cultures` section:
 
 .. image:: /images/fundamentals/administration/cultures/1.png
