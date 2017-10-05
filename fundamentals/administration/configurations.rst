@@ -24,7 +24,7 @@ class that you can use to operate the configurations. It implements the
 `IConfigurationManager <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Configurations/ConfigurationManager/IConfigurationManager.cs#L6>`_
 interface and it is registered as a service inside the DI, so you can replace it with your own implementation.
 
-The is the usage example:
+This is the usage example:
 
 .. code-block:: cs
     :emphasize-lines: 5
@@ -44,4 +44,4 @@ Also, you can use the ``configurationBuilder.AddStorage()`` extension method:
 
     IConfigurationRoot configurationRoot = new ConfigurationBuilder().AddStorage(storage).Build();
 	
-	string emailSmtpServer = configurationRoot["Email:SmtpServer"];
+    string emailSmtpServer = configurationRoot["Email:SmtpServer"];
