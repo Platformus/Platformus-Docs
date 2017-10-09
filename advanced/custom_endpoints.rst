@@ -30,8 +30,8 @@ as the compiled executable; use it as the NuGet packages instead, or write your 
     }
 
 As you can see, we used the `EndpointBase <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Routing/Endpoints/EndpointBase.cs#L12>`_
-abstract class instead of implementing the IEndpoint interface from scratch. It provides useful methods to manipulate URL parameters that comes from the
-endpoint resolver (see below).
+abstract class instead of implementing the ``IEndpoint`` interface from scratch. It provides useful methods to manipulate the parameters and URL arguments
+that come from the endpoint resolver (see below).
 
 Please do not confuse the endpoint entity
 (the `Platformus.Routing.Data.Entities.Endpoint <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Routing.Data.Entities/Endpoint.cs#L12>`_ class
