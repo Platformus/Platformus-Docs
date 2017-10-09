@@ -10,7 +10,7 @@ Data source is the C# class that implements the
 Endpoints can use the data sources as they (or developer) want. Default endpoint uses them to construct the view model for the views.
 Let’s write our own simple data source which will return some hardcoded values.
 
-Create the HardcodedValuesDataSource class inside the main web application project and implement the ``IDataSource`` interface there
+Create the ``HardcodedValuesDataSource`` class inside the main web application project and implement the ``IDataSource`` interface there
 (in order to be able to write custom code in your Platformus-based web application, you can’t use Platformus
 as the compiled executable; use it as the NuGet packages instead, or write your own extension project and then put its compiled DLL file inside the extensions folder):
 
