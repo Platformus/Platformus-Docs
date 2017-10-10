@@ -2,7 +2,7 @@
 ==========
 
 Data types are used to describe how the object property values should be stored, displayed, and edited in the backend.
-You can manage them (add, edit, and delete) from the backend using the :guilabel:` Administration/Data Types` section:
+You can manage them (add, edit, and delete) from the backend using the :guilabel:`Administration/Data Types` section:
 
 .. image:: /images/fundamentals/administration/data_types/1.png
 
