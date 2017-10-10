@@ -3,7 +3,7 @@
 
 Platformus has built-in object mapper that allows you to map the C# objects on the Platformus ones and vice versa.
 Using this feature you can, for example,  create a comment object inside a
-`custom form handler <http://docs.platformus.net/en/latest/advanced/custom_form_handler.html>`_.
+`custom form handler <http://docs.platformus.net/en/latest/advanced/custom_form_handlers.html>`_.
 
 Let’s see how it works. First of all, we need to create a class in the Platformus backend. Create a simple ``Cat`` class
 with two properties: ``Name`` (localizable single line plain text) and ``Birthday`` (date):
@@ -39,4 +39,4 @@ To create a cat use the following code:
 
     cat.Name = new Dictionary<string, string>() { { "en", "Cat #1" }, { "ru", "Кот №1" }, { "uk", "Кіт №1" } };
     cat.Birthday = DateTime.Now;
-	new StronglyTypedObjectMapper(this).Create(cat);
+    new StronglyTypedObjectMapper(this).Create(cat);

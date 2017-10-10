@@ -29,7 +29,7 @@ as the compiled executable; use it as the NuGet packages instead, or write your 
     }
 
 As you can see, we used the `DataSourceBase <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Routing/DataSources/DataSourceBase.cs#L11>`_
-abstract class instead of implementing the ``IDataSource`` interface from scratch. It provides useful methods to manipulate the parameters (see below).
+abstract class instead of implementing the ``IDataSource`` interface from scratch. It provides useful methods to manipulate the data source parameters (see below).
 
 Please do not confuse the data source entity
 (the `Platformus.Routing.Data.Entities.DataSource <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Routing.Data.Entities/DataSource.cs#L12>`_ class
