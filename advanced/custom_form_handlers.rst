@@ -2,7 +2,7 @@
 ====================
 
 Platformus.Forms extension offers the great forms features. You can describe your forms in the backend, and then render them
-and get user feedback on any frontend view. When user fills the form and clicks the :guilabel:`Submit button`,
+and get user feedback on any frontend view. When user fills the form and clicks the :guilabel:`Submit` button,
 data is sent to a server and might be processed in any way you want. User input is handled by the implementations of the
 `IFormHandler <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Forms/FormHandlers/IFormHandler.cs#L11>`_ interface.
 
