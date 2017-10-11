@@ -38,4 +38,4 @@ Name is used to identify the data types in the backend.
 :guilabel:`Position`
 ~~~~~~~~~~~~~~~~~~~~
 
-Position is used to sort data types in the lists.
+Position is used to sort the data types in the lists.
