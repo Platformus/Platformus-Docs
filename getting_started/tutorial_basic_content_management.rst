@@ -1,15 +1,15 @@
 ﻿Tutorial: Basic Content Management
 ==================================
 
-We have working Platformus-based web application. Let’s assume it is the default personal website
-that goes with the installer. Now we are going to see how to add the blog section on that website.
+We have working Platformus-based web application. Let’s assume it is the `default personal website <https://github.com/Platformus/Platformus-Sample-Personal-Website>`_.
+Now we are going to see how to add the blog section on that website.
 
-First of all, we need the blog post pages, right? Each blog post post should have the same properties as the regular page,
+First of all, we need the blog post pages. Each blog post post should have the same properties as the regular page,
 but also it needs preview (the small piece of content), image, and creation date. In the Platformus context,
 all the pages are objects which are described by the classes. Therefore, to create new type of page
 (and new type of object) we need to create the corresponding class first.
 
-Go and login to the backend (navigate to `http://localhost:5000/backend/ <http://localhost:5000/backend/>`_)
+Go and login to the backend (navigate to `https://localhost:5000/backend/ <https://localhost:5000/backend/>`_)
 and then go to the :guilabel:`Administration/Classes` section. There are already two classes here: ``Page`` and ``Regular Page``.
 The ``Page`` class is abstract, it means that it is used as the base class for the other ones (class copies all the members
 of its parent class). Click the :guilabel:`Members` link of the ``Page`` class to see the list of its members.
@@ -43,7 +43,7 @@ Now click the :guilabel:`Property` tab and fill the fields as shown below:
 
 When you change the property data type, the set of the fields on this tab is changed too. You can add your own data types
 and specify their properties (as well as the client-side editors that are used to edit them) in the
-`Data types <http://docs.platformus.net/en/latest/fundamentals/administration/datatypes.html>`_ section.
+`Data types <https://docs.platformus.net/en/latest/fundamentals/administration/datatypes.html>`_ section.
 For the properties that have short values we can set the :guilabel:`Is property visible in list` checkbox,
 so that properties will be displayed in the object list (we will see that later).
 Now click the :guilabel:`Save` button again, our member is created.
@@ -77,7 +77,7 @@ but now let’s use old good view for that.
 Go to the Development/Views/Default section. The list of the views from the Default subdirectory is displayed (by default,
 all the requests are handled by the ``DefaultController``, that’s why subdirectory has that name; you can change the way
 requests are handled by Platformus, we will talk about that in the
-`Advanced <http://docs.platformus.net/en/latest/advanced/index.html>`_ section):
+`Advanced <https://docs.platformus.net/en/latest/advanced/index.html>`_ section):
 
 .. image:: /images/getting_started/tutorial_basic_content_management/9.png
 
@@ -91,13 +91,13 @@ which contains all the properties of our blog post page object that we have desc
 If your view needs more different data in order to be rendered, just add more data sources that will provide this data
 to the view model. Data sources are C# classes that implement the
 `IDataSource <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Routing/DataSources/IDataSource.cs#L10>`_
-interface, you can `create your own ones <http://docs.platformus.net/en/latest/advanced/custom_data_sources.html>`_.
+interface, you can `create your own ones <https://docs.platformus.net/en/latest/advanced/custom_data_sources.html>`_.
 They can provide data in any way you need: to load some objects,
 to take it from the web services (weather forecast?), or to return some hardcoded values. All the data sources
 that are used to process the particular request are grouped inside the endpoint. Endpoints process the requests
 and return response in Platformus-based web applications (as well as data sources, they are C# classes that implement the
 `IEndpoint <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Routing/Endpoints/IEndpoint.cs#L11>`_
-interface, and you can `create your own implementations <http://docs.platformus.net/en/latest/advanced/custom_endpoints.html>`_).
+interface, and you can `create your own implementations <https://docs.platformus.net/en/latest/advanced/custom_endpoints.html>`_).
 We will see how this all works a bit later in this article. Now click the :guilabel:`Save` button. The view is created:
 
 .. image:: /images/getting_started/tutorial_basic_content_management/11.png
@@ -134,7 +134,7 @@ and assign it to the view model’s ``Page`` property (that will also be created
 .. image:: /images/getting_started/tutorial_basic_content_management/14.png
 
 That’s it. Now we can test how our blog post page is displayed. Navigate to
-`http://localhost:5000/en/blog/my-first-blog-post <http://localhost:5000/en/blog/my-first-blog-post>`_:
+`https://localhost:5000/en/blog/my-first-blog-post <https://localhost:5000/en/blog/my-first-blog-post>`_:
 
 .. image:: /images/getting_started/tutorial_basic_content_management/15.png
 
@@ -166,7 +166,7 @@ As you can see, another C# class is selected for this data source. It provides m
 it allows to specify the class of the objects to load, to specify which their relations (and relations of the relations and so on)
 should be loaded, should we use filtering, sorting, or paging etc.
 
-Everything is done. Now you can navigate to `http://localhost:5000/en/blog <http://localhost:5000/en/blog>`_
+Everything is done. Now you can navigate to `https://localhost:5000/en/blog <https://localhost:5000/en/blog>`_
 and see the result:
 
 .. image:: /images/getting_started/tutorial_basic_content_management/20.png
@@ -174,5 +174,5 @@ and see the result:
 Click the image to go to the blog post page. You can add the new menu item in the menu to have your blog there.
 
 In the next tutorial we will see how to display comments on the blog post page and how to create them using the forms,
-user input and `Platformus object mappers <http://docs.platformus.net/en/latest/advanced/object_mapping.html>`_.
+user input and `Platformus object mappers <https://docs.platformus.net/en/latest/advanced/object_mapping.html>`_.
 

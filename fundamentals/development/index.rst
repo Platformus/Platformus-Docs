@@ -4,8 +4,6 @@
 .. toctree::
    :titlesonly:
 
-   endpoints
-   views
-   styles
-   scripts
+   data_types
+   classes
    bundles

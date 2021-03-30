@@ -4,7 +4,8 @@
 .. toctree::
    :titlesonly:
 
-   cultures
-   datatypes
-   classes
    configurations
+   cultures
+   order_states
+   delivery_methods
+   payment_methods

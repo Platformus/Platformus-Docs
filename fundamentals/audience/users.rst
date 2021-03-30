@@ -1,8 +1,8 @@
 ﻿Users
 =====
 
-Users (as well as `permissions <http://docs.platformus.net/en/latest/fundamentals/audience/permissions.html>`_
-and `roles <http://docs.platformus.net/en/latest/fundamentals/audience/roles.html>`_) are used to control access
+Users (as well as `permissions <https://docs.platformus.net/en/latest/fundamentals/audience/permissions.html>`_
+and `roles <https://docs.platformus.net/en/latest/fundamentals/audience/roles.html>`_) are used to control access
 to a web application resources. You can manage them (add, edit, and delete) from the backend
 using the :guilabel:`Audience/Users` section:
 

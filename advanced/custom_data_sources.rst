@@ -66,6 +66,6 @@ Data Source Parameters and Parameter Groups
 -------------------------------------------
 
 As well as the endpoints, data sources support parameters and parameter groups. The implementation is absolutely the same, so please just take a look at
-the `one for the endpoints <http://docs.platformus.net/en/latest/advanced/custom_endpoints.html#endpoint-parameters-and-parameter-groups>`_.
+the `one for the endpoints <https://docs.platformus.net/en/latest/advanced/custom_endpoints.html#endpoint-parameters-and-parameter-groups>`_.
 Also, please take a look at the `built-in data sources <https://github.com/Platformus/Platformus/tree/master/src/Platformus.Domain/DataSources>`_
 to see how they use this feature.

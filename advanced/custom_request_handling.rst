@@ -39,7 +39,7 @@ and return not-null result for some particular requests:
       }
     }
 
-Navigate to http://localhost:5000/en/some-url:
+Navigate to https://localhost:5000/en/some-url:
 
 .. image:: /images/advanced/custom_request_handling/1.png
 

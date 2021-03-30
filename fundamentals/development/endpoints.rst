@@ -52,6 +52,6 @@ your view model will have a property with this name.
 Both endpoints and data sources can have parameters. These parameters are specified by a developer and
 can have different types and client-side JavaScript editors. Developers can add their own parameter editors.
 
-You can read more about custom `endpoints <http://docs.platformus.net/en/latest/advanced/custom_endpoints.html>`_
-and `data sources <http://docs.platformus.net/en/latest/advanced/custom_data_sources.html>`_ in the
-`advanced <http://docs.platformus.net/en/latest/advanced/index.html>`_ section.
+You can read more about custom `endpoints <https://docs.platformus.net/en/latest/advanced/custom_endpoints.html>`_
+and `data sources <https://docs.platformus.net/en/latest/advanced/custom_data_sources.html>`_ in the
+`advanced <https://docs.platformus.net/en/latest/advanced/index.html>`_ section.

@@ -5,12 +5,12 @@ Classes are used to describe the objects. Using the members, they describe which
 how these property values should be stored and edited in the backend. You can manage them (add, edit, and delete)
 from the backend using the :guilabel:`Administration/Classes` section:
 
-.. image:: /images/fundamentals/administration/classes/1.png
+.. image:: /images/fundamentals/development/classes/1.png
 
 Data Type Fields
 ----------------
 
-.. image:: /images/fundamentals/administration/classes/2.png
+.. image:: /images/fundamentals/development/classes/2.png
 
 :guilabel:`Parent class (abstract only)`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -46,12 +46,12 @@ Tabs
 
 Tabs are used to group the object property editors on the object page. Click the :guilabel:`Tabs` link in the class row:
 
-.. image:: /images/fundamentals/administration/classes/3.png
+.. image:: /images/fundamentals/development/classes/3.png
 
 Tab Fields
 ----------
 
-.. image:: /images/fundamentals/administration/classes/4.png
+.. image:: /images/fundamentals/development/classes/4.png
 
 :guilabel:`Name`
 ~~~~~~~~~~~~~~~~
@@ -69,12 +69,12 @@ Members
 Members are used to describe which properties should have the objects of a given class. Click the :guilabel:`Members` link
 in the class row:
 
-.. image:: /images/fundamentals/administration/classes/5.png
+.. image:: /images/fundamentals/development/classes/5.png
 
 Member Fields
 -------------
 
-.. image:: /images/fundamentals/administration/classes/6.png
+.. image:: /images/fundamentals/development/classes/6.png
 
 :guilabel:`General/Tab`
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -96,7 +96,7 @@ Name is used to identify the members in the backend.
 
 Position is used to sort the members in the lists.
 
-.. image:: /images/fundamentals/administration/classes/7.png
+.. image:: /images/fundamentals/development/classes/7.png
 
 :guilabel:`Property/Property data type`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -107,7 +107,7 @@ how to display and edit it in the backend.
 
 If a property data type is selected, data type parameters will be also displayed.
 
-.. image:: /images/fundamentals/administration/classes/8.png
+.. image:: /images/fundamentals/development/classes/8.png
 
 :guilabel:`Relation/Relation class`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

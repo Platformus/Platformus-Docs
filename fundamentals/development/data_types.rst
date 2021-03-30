@@ -4,12 +4,12 @@
 Data types are used to describe how the object property values should be stored, displayed, and edited in the backend.
 You can manage them (add, edit, and delete) from the backend using the :guilabel:`Administration/Data Types` section:
 
-.. image:: /images/fundamentals/administration/data_types/1.png
+.. image:: /images/fundamentals/development/data_types/1.png
 
 Data Type Fields
 ----------------
 
-.. image:: /images/fundamentals/administration/data_types/2.png
+.. image:: /images/fundamentals/development/data_types/2.png
 
 :guilabel:`Storage data type`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

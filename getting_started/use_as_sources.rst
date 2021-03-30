@@ -14,31 +14,13 @@ of the projects you really need to modify.
 2. Download `Platformus sources <https://github.com/Platformus/Platformus/tree/master/src>`_ from the GitHub.
 Copy them into your solution.
 
-3. Add dependencies  on the following projects to your web application project:
+3. Add dependencies on the following projects to your web application project:
 
-* Platformus.Configurations.Backend;
-* Platformus.Configurations.Data.EntityFramework.Sqlite;
-* Platformus.Designers.Backend;
-* Platformus.Domain.Api;
-* Platformus.Domain.Backend;
-* Platformus.Domain.Data.EntityFramework.Sqlite;
-* Platformus.Domain.Frontend;
-* Platformus.FileManager.Backend;
-* Platformus.FileManager.Data.EntityFramework.Sqlite;
-* Platformus.Forms.Backend;
-* Platformus.Forms.Data.EntityFramework.Sqlite;
-* Platformus.Forms.Frontend;
-* Platformus.Globalization.Backend;
-* Platformus.Globalization.Data.EntityFramework.Sqlite;
-* Platformus.Globalization.Frontend;
-* Platformus.Menus.Backend;
-* Platformus.Menus.Data.EntityFramework.Sqlite;
-* Platformus.Menus.Frontend;
-* Platformus.Routing.Backend;
-* Platformus.Routing.Data.EntityFramework.Sqlite;
-* Platformus.Routing.Frontend;
-* Platformus.Security.Backend;
-* Platformus.Security.Data.EntityFramework.Sqlite;
+* Platformus.Core.Data.EntityFramework.Sqlite;
+* Platformus.Images;
+* Platformus.Website.Backend;
+* Platformus.Website.Data.EntityFramework.Sqlite;
+* Platformus.Website.Frontend;
 * Platformus.WebApplication.
 
 4. Open your ``Startup`` class.
@@ -61,12 +43,13 @@ in order to provide the connection string (of course, you should take it from th
 	
 	public void ConfigureServices(IServiceCollection services)
     {
-      services.AddPlatformus(this.extensionsPath);
-      services.Configure<StorageContextOptions>(options =>
+	  services.Configure<StorageContextOptions>(options =>
         {
           options.ConnectionString = this.configurationRoot.GetConnectionString("Default");
         }
       );
+	  
+      services.AddPlatformus(this.extensionsPath);
     }
 
 Add the ``applicationBuilder.UsePlatformus()`` extension method call inside the ``Configure`` method:
@@ -74,12 +57,10 @@ Add the ``applicationBuilder.UsePlatformus()`` extension method call inside the 
 .. code-block:: cs
     :emphasize-lines: 8
 	
-	public void Configure(IApplicationBuilder applicationBuilder, IHostingEnvironment hostingEnvironment)
+	public void Configure(IApplicationBuilder applicationBuilder, IWebHostEnvironment webHostEnvironment)
     {
-      if (hostingEnvironment.IsDevelopment())
-      {
+      if (webHostEnvironment.IsDevelopment())
         applicationBuilder.UseDeveloperExceptionPage();
-      }
 
       applicationBuilder.UsePlatformus();
     }
@@ -87,4 +68,7 @@ Add the ``applicationBuilder.UsePlatformus()`` extension method call inside the 
 Don’t forget to include the ``Platformus.WebApplication.Extensions`` namespace in order these extension methods
 to be resolved.
 
+4. Execute Platformus `database scripts <https://platformus.readthedocs.io/en/latest/getting_started/storage_scripts.html>`_ on your database.
+
 5. Run your web application and navigate to /backend to configure Platformus.
+Use the default "admin@platformus.net" and "admin" credentials to sign in.

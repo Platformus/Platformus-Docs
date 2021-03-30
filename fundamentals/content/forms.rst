@@ -16,7 +16,7 @@ interface that will handle the user input for this form. There is the only one b
 the `EmailFormHandler <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Forms.Frontend/FormHandlers/EmailFormHandler.cs#L17>`_
 class. It sends the user input to the specified recipients by the email. You can write your own implementations
 of this interface. For example, you can have form handler that creates objects using the user input and
-Platformus `object mappers <http://docs.platformus.net/en/latest/advanced/object_mapping.html>`_.
+Platformus `object mappers <https://docs.platformus.net/en/latest/advanced/object_mapping.html>`_.
 
 Each form handler can have different (specified by the developer) parameters, which use different parameter editors.
 Parameter editors might be created by the developer too. (The built-in form handler has two parameters: :guilabel:`Recipient emails`
@@ -44,7 +44,7 @@ As you can see, an additional CSS class might be applied using the corresponding
 The form will be displayed using the built-in views
 (`_Form <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Forms.Frontend/Views/Shared/_Form.cshtml>`_ and
 `_Field <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Forms.Frontend/Views/Shared/_Field.cshtml>`_).
-The HTML elements have unique CSS classes (the `BEM <http://getbem.com/>`_ methodology is used), so it is easy
+The HTML elements have unique CSS classes (the `BEM <https://getbem.com/>`_ methodology is used), so it is easy
 to apply styles to them:
 
 .. code-block:: html

@@ -26,7 +26,7 @@ By default, short culture code segment is used in the URL to specify which cultu
 For example: /en/some-page. It is done in this way to make it possible for the pages to be indexed by the search engines
 with the different cultures.  But if you are sure that your web application will always support the only one culture,
 you can turn off this behavior using the
-`configurations <http://docs.platformus.net/en/latest/fundamentals/administration/configurations.html>`_ and have shorter URLs.
+`configurations <https://docs.platformus.net/en/latest/fundamentals/administration/configurations.html>`_ and have shorter URLs.
 In this case, the default culture will be used to display the content (but you can change the way culture is selected
 for the requests).
 

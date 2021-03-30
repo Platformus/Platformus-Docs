@@ -15,6 +15,6 @@ Also, on the :guilabel:`Permissions` tab you can assign the permissions to a rol
 
 .. image:: /images/fundamentals/audience/roles/3.png
 
-The same as `permissions <http://docs.platformus.net/en/latest/fundamentals/audience/permissions.html>`_,
+The same as `permissions <https://docs.platformus.net/en/latest/fundamentals/audience/permissions.html>`_,
 the roles are attached to a user as the claims while signing in. You can check them from the code,
 but permissions checking is preferred.

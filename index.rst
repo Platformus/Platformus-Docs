@@ -10,9 +10,8 @@
 Platformus CMS
 ==============
 
-`Platformus <http://platformus.net/>`_ is free, open source and cross-platform CMS
-based on ASP.NET Core and `ExtCore framework <http://extcore.net/>`_. It is built using
-the best and the most modern tools and languages (Visual Studio 2017, C# etc). Join our team!
+`Platformus <https://platformus.net/>`_ is free, open source, and cross-platform developer-friendly CMS
+based on ASP.NET Core, `ExtCore framework <https://extcore.net/>`_, and `Magicalizer <https://magicalizer.net/>`_.
 
 Contents
 --------

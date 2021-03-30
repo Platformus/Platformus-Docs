@@ -1,8 +1,8 @@
 ﻿Custom Endpoints
 ================
 
-As we have discussed in the `Introduction <http://docs.platformus.net/en/latest/introduction/index.html>`_ and
-`Getting Started\Tutorial: Basic Content Management <http://docs.platformus.net/en/latest/getting_started/tutorial_basic_content_management.html>`_ articles,
+As we have discussed in the `Introduction <https://docs.platformus.net/en/latest/introduction/index.html>`_ and
+`Getting Started\Tutorial: Basic Content Management <https://docs.platformus.net/en/latest/getting_started/tutorial_basic_content_management.html>`_ articles,
 endpoints handle the HTTP requests that come to a Platformus-based web application. When request comes, particular endpoint is resolved by the implementation of the
 `IEndpointResolver <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Routing/EndpointResolvers/IEndpointResolver.cs#L10>`_ interface,
 depending on the URL template (it is behavior of the

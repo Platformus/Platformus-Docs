@@ -1,1 +1,1 @@
-# Docs for Platformus 1.0.0-beta1
+# Docs for Platformus 2.0.0
