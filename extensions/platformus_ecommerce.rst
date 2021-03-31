@@ -7,10 +7,10 @@ Can be used as a starting point for ecommerce projects.
 Packages
 --------
 
-* Platformus.ECommerce;
-* Platformus.ECommerce.Backend;
-* Platformus.ECommerce.Data.Entities;
-* Platformus.ECommerce.Data.EntityFramework.PostgreSql;
-* Platformus.ECommerce.Data.EntityFramework.Sqlite;
-* Platformus.ECommerce.Data.EntityFramework.SqlServer;
-* Platformus.ECommerce.Frontend.
+* `Platformus.ECommerce <https://github.com/Platformus/Platformus/tree/master/src/Platformus.ECommerce>`_;
+* `Platformus.ECommerce.Backend <https://github.com/Platformus/Platformus/tree/master/src/Platformus.ECommerce.Backend>`_;
+* `Platformus.ECommerce.Data.Entities <https://github.com/Platformus/Platformus/tree/master/src/Platformus.ECommerce.Data.Entities>`_;
+* `Platformus.ECommerce.Data.EntityFramework.PostgreSql <https://github.com/Platformus/Platformus/tree/master/src/Platformus.ECommerce.Data.EntityFramework.PostgreSql>`_;
+* `Platformus.ECommerce.Data.EntityFramework.Sqlite <https://github.com/Platformus/Platformus/tree/master/src/Platformus.ECommerce.Data.EntityFramework.Sqlite>`_;
+* `Platformus.ECommerce.Data.EntityFramework.SqlServer <https://github.com/Platformus/Platformus/tree/master/src/Platformus.ECommerce.Data.EntityFramework.SqlServer>`_;
+* `Platformus.ECommerce.Frontend <https://github.com/Platformus/Platformus/tree/master/src/Platformus.ECommerce.Frontend>`_.

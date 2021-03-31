@@ -7,11 +7,11 @@ Can be used as a base for the mobile application admin panels etc.
 Packages
 --------
 
-* Platformus.Core;
-* Platformus.Core.Backend;
-* Platformus.Core.Data.Abstractions;
-* Platformus.Core.Data.Entities;
-* Platformus.Core.Data.EntityFramework.PostgreSql;
-* Platformus.Core.Data.EntityFramework.Sqlite;
-* Platformus.Core.Data.EntityFramework.SqlServer;
-* Platformus.Core.Frontend.
+* `Platformus.Core <https://github.com/Platformus/Platformus/tree/master/src/Platformus.Core>`_;
+* `Platformus.Core.Backend <https://github.com/Platformus/Platformus/tree/master/src/Platformus.Core.Backend>`_;
+* `Platformus.Core.Data.Abstractions <https://github.com/Platformus/Platformus/tree/master/src/Platformus.Core.Data.Abstractions>`_;
+* `Platformus.Core.Data.Entities <https://github.com/Platformus/Platformus/tree/master/src/Platformus.Core.Data.Entities>`_;
+* `Platformus.Core.Data.EntityFramework.PostgreSql <https://github.com/Platformus/Platformus/tree/master/src/Platformus.Core.Data.EntityFramework.PostgreSql>`_;
+* `Platformus.Core.Data.EntityFramework.Sqlite <https://github.com/Platformus/Platformus/tree/master/src/Platformus.Core.Data.EntityFramework.Sqlite>`_;
+* `Platformus.Core.Data.EntityFramework.SqlServer <https://github.com/Platformus/Platformus/tree/master/src/Platformus.Core.Data.EntityFramework.SqlServer>`_;
+* `Platformus.Core.Frontend <https://github.com/Platformus/Platformus/tree/master/src/Platformus.Core.Frontend>`_.

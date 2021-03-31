@@ -13,6 +13,6 @@ interface implementations), your extensions still may contain standard things li
 
 Basic backend UI (HTML, styles, scripts, tag helpers etc.) is defined inside the
 `Platformus.Core.Backend <https://github.com/Platformus/Platformus/tree/master/src/Platformus.Core.Backend>`_
-package of the `Platformus.Core <https://platformus.readthedocs.io/en/latest/extensions/platformus_core.html>_` extension.
+package of the `Platformus.Core <https://platformus.readthedocs.io/en/latest/extensions/platformus_core.html>`_ extension.
 Using the `IMetadata <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Core.Backend/Metadata.cs#L11>`_
 interface implementations you can replace existing styles and scripts, add new ones, add backend menu sections and items.
