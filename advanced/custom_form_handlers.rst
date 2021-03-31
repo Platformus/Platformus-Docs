@@ -1,27 +1,34 @@
 ﻿Custom Form Handlers
 ====================
 
-Platformus.Website extension offers the great forms features. You can describe your forms in the backend, and then render them
+`Platformus.Website <https://platformus.readthedocs.io/en/latest/extensions/platformus_website.html>`_
+extension offers the great forms features. You can describe your forms in the backend, and then render them
 and get user feedback on any frontend view. When user fills the form and clicks the :guilabel:`Submit` button,
 data is sent to a server and might be processed in any way you want. User input is handled by the implementations of the
 `IFormHandler <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website/FormHandlers/IFormHandler.cs#L13>`_ interface.
 
 The selected implementation receives the form object, all the user input (string values by field objects), and all the attachments
-user has uploaded. It can return any ``IActionResult`` as the result.
+user has uploaded. Field values can be validated using the implementations of the
+`IFieldValidator <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website/FormHandlers/IFieldValidator.cs#L10>`_
+interface (you can use the
+`ReCaptchaFieldValidator <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website.Frontend/FormHandlers/ReCaptchaFieldValidator.cs>`_
+as an example).
+
+It should return any ``IActionResult`` as the result.
 
 Platformus has the only one built-in implementation of the ``IFormHandler`` interface:
 the `EmailFormHandler <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website.Frontend/FormHandlers/EmailFormHandler.cs#L19>`_ class.
 It sends the user input to the specified email recipients.
 
-Let’s implement our own form handler, which will just display the user input. Create the ``DisplayUserInputFormHandler`` class inside the main web application project
-and implement the ``IFormHandler`` interface there:
+Let’s implement our own form handler, which will just display the user input (but we could create some DB records as well).
+Create the ``DisplayUserInputFormHandler`` class inside the main web application project and implement the ``IFormHandler`` interface there:
 
 .. code-block:: cs
     :emphasize-lines: 1
 
     public class DisplayUserInputFormHandler : IFormHandler
     {
-	  public IEnumerable<ParameterGroup> ParameterGroups => new ParameterGroup[] { };
+      public IEnumerable<ParameterGroup> ParameterGroups => new ParameterGroup[] { };
       public string Description => "Our own form handler.";
 	
       public async Task<IActionResult> HandleAsync(HttpContext httpContext, string origin, Form form, IDictionary<Field, string> valuesByFields, IDictionary<string, byte[]> attachmentsByFilenames)
@@ -57,5 +64,5 @@ Form Handler Parameters and Parameter Groups
 As well as the endpoints and data sources, form handlers support parameters and parameter groups. The implementation is absolutely the same,
 so please just take a look at
 the `one for the endpoints <https://docs.platformus.net/en/latest/advanced/custom_endpoints.html#endpoint-parameters-and-parameter-groups>`_.
-Also, please take a look at the `built-in form handler <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website.Frontend/FormHandlers/EmailFormHandler.cs#L19>`_
+Also, please take a look at the `built-in form handler <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website.Frontend/FormHandlers/EmailFormHandler.cs#L57>`_
 to see how it uses this feature.
