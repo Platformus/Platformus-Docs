@@ -1,6 +1,9 @@
 ﻿Getting Started
 ===============
 
+Using the Platformus CMS as the NuGet packages is the preferred way
+(unless you consider the source code only as a starting point for your own project and do not need any updates in the future).
+
 .. toctree::
    :titlesonly:
 

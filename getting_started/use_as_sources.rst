@@ -1,9 +1,9 @@
 ﻿Use as Sources
 ==============
 
-This option gives you full control over Platformus and your web application. Also it is the way to develop
-Platformus itself. Please keep in mind that compilation takes longer in this case, so include only the sources
-of the projects you really need to modify.
+To use Platformus CMS as the source code create a host web application,
+copy the Platformus source code to the solution folder and add corresponding project dependencies.
+Please keep in mind that compilation takes longer in this case, so include only the sources of the projects you really need.
 
 1. Create an ASP.NET Core web application (or use an existing one):
 
@@ -30,7 +30,7 @@ Add the ``services.AddPlatformus()`` extension method call inside the ``Configur
 .. code-block:: cs
     :emphasize-lines: 3
 	
-	public void ConfigureServices(IServiceCollection services)
+    public void ConfigureServices(IServiceCollection services)
     {
       services.AddPlatformus();
     }
@@ -41,11 +41,11 @@ in order to provide the connection string (of course, you should take it from th
 .. code-block:: cs
     :emphasize-lines: 4-8
 	
-	public void ConfigureServices(IServiceCollection services)
+    public void ConfigureServices(IServiceCollection services)
     {
 	  services.Configure<StorageContextOptions>(options =>
         {
-          options.ConnectionString = this.configurationRoot.GetConnectionString("Default");
+          options.ConnectionString = this.configuration.GetConnectionString("Default");
         }
       );
 	  
@@ -57,7 +57,7 @@ Add the ``applicationBuilder.UsePlatformus()`` extension method call inside the 
 .. code-block:: cs
     :emphasize-lines: 8
 	
-	public void Configure(IApplicationBuilder applicationBuilder, IWebHostEnvironment webHostEnvironment)
+    public void Configure(IApplicationBuilder applicationBuilder, IWebHostEnvironment webHostEnvironment)
     {
       if (webHostEnvironment.IsDevelopment())
         applicationBuilder.UseDeveloperExceptionPage();

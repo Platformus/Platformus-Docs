@@ -1,9 +1,8 @@
 ﻿Use as the NuGet Packages
 =========================
 
-This is the most convenient way to use Platformus. Compilation is fast, you can easily add
-your own classes (for example, to write custom implementations of the ``IEndpoint``, ``IDataSource``, or other interfaces).
-Also, you can update Platformus just using the NuGet Package Manager.
+To use Platformus CMS as the NuGet packages create a host web application, add dependencies on the corresponding packages,
+and write application-specific code. You can extend the built-in features and modify the default behavior using the Platformus public API.
 
 1. Create an ASP.NET Core web application (or use an existing one):
 
@@ -28,12 +27,12 @@ Or you can add them manually by editing .csproj file of your web application pro
     :emphasize-lines: 2-9
 
     <ItemGroup>
-      <PackageReference Include="Platformus.Core.Data.EntityFramework.Sqlite" Version="2.0.1" />
-      <PackageReference Include="Platformus.Images" Version="2.0.1" />
-      <PackageReference Include="Platformus.Website.Backend" Version="2.0.1" />
-      <PackageReference Include="Platformus.Website.Data.EntityFramework.SqlServer" Version="2.0.1" />
-      <PackageReference Include="Platformus.Website.Frontend" Version="2.0.1" />
-	  <PackageReference Include="Platformus.WebApplication" Version="2.0.1" />
+      <PackageReference Include="Platformus.Core.Data.EntityFramework.Sqlite" Version="2.4.0" />
+      <PackageReference Include="Platformus.Images" Version="2.4.0" />
+      <PackageReference Include="Platformus.Website.Backend" Version="2.4.0" />
+      <PackageReference Include="Platformus.Website.Data.EntityFramework.SqlServer" Version="2.4.0" />
+      <PackageReference Include="Platformus.Website.Frontend" Version="2.4.0" />
+      <PackageReference Include="Platformus.WebApplication" Version="2.4.0" />
     </ItemGroup>
 
 3. Open your ``Startup`` class.
@@ -43,7 +42,7 @@ Add the ``services.AddPlatformus()`` extension method call inside the ``Configur
 .. code-block:: cs
     :emphasize-lines: 3
 	
-	public void ConfigureServices(IServiceCollection services)
+    public void ConfigureServices(IServiceCollection services)
     {
       services.AddPlatformus();
     }
@@ -54,11 +53,11 @@ in order to provide the connection string (of course, you should take it from th
 .. code-block:: cs
     :emphasize-lines: 4-8
 	
-	public void ConfigureServices(IServiceCollection services)
+    public void ConfigureServices(IServiceCollection services)
     {
 	  services.Configure<StorageContextOptions>(options =>
         {
-          options.ConnectionString = this.configurationRoot.GetConnectionString("Default");
+          options.ConnectionString = this.configuration.GetConnectionString("Default");
         }
       );
 	  
@@ -70,7 +69,7 @@ Add the ``applicationBuilder.UsePlatformus()`` extension method call inside the 
 .. code-block:: cs
     :emphasize-lines: 8
 	
-	public void Configure(IApplicationBuilder applicationBuilder, IWebHostEnvironment webHostEnvironment)
+    public void Configure(IApplicationBuilder applicationBuilder, IWebHostEnvironment webHostEnvironment)
     {
       if (webHostEnvironment.IsDevelopment())
         applicationBuilder.UseDeveloperExceptionPage();
@@ -78,8 +77,7 @@ Add the ``applicationBuilder.UsePlatformus()`` extension method call inside the 
       applicationBuilder.UsePlatformus();
     }
 
-Don’t forget to include the ``Platformus.WebApplication.Extensions`` namespace in order these extension methods
-to be resolved.
+Don’t forget to include the ``Platformus.WebApplication.Extensions`` namespace in order these extension methods to be resolved.
 
 4. Execute Platformus `database scripts <https://platformus.readthedocs.io/en/latest/getting_started/storage_scripts.html>`_ on your database.
 
