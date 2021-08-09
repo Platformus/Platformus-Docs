@@ -39,11 +39,11 @@ Add the ``StorageContextOptions`` options class configuration inside the ``Confi
 in order to provide the connection string (of course, you should take it from the application settings):
 
 .. code-block:: cs
-    :emphasize-lines: 4-8
+    :emphasize-lines: 3-7
 	
     public void ConfigureServices(IServiceCollection services)
     {
-	  services.Configure<StorageContextOptions>(options =>
+      services.Configure<StorageContextOptions>(options =>
         {
           options.ConnectionString = this.configuration.GetConnectionString("Default");
         }
@@ -55,7 +55,7 @@ in order to provide the connection string (of course, you should take it from th
 Add the ``applicationBuilder.UsePlatformus()`` extension method call inside the ``Configure`` method:
 
 .. code-block:: cs
-    :emphasize-lines: 8
+    :emphasize-lines: 6
 	
     public void Configure(IApplicationBuilder applicationBuilder, IWebHostEnvironment webHostEnvironment)
     {
@@ -68,7 +68,7 @@ Add the ``applicationBuilder.UsePlatformus()`` extension method call inside the 
 Don’t forget to include the ``Platformus.WebApplication.Extensions`` namespace in order these extension methods
 to be resolved.
 
-4. Execute Platformus `database scripts <https://platformus.readthedocs.io/en/latest/getting_started/storage_scripts.html>`_ on your database.
+4. Execute Platformus `database scripts <https://platformus.readthedocs.io/en/latest/getting_started/database_scripts.html>`_ on your database.
 
 5. Run your web application and navigate to /backend to configure Platformus.
 Use the default "admin@platformus.net" and "admin" credentials to sign in.
