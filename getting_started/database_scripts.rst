@@ -1,4 +1,6 @@
-﻿Database Scripts
+﻿.. _database-scripts:
+
+Database Scripts
 ================
 
 Currently Platformus CMS supports following database types:
