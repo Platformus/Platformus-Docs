@@ -1,10 +1,12 @@
 ﻿Use as the NuGet Packages
 =========================
 
-To use Platformus CMS as the NuGet packages create a host web application, add dependencies on the corresponding packages,
-and write application-specific code. You can extend the built-in features and modify the default behavior using the Platformus public API.
+Using Platformus CMS as the NuGet packages is the preferred way
+(unless you consider the source code only as a starting point for your own project and do not need any updates in the future).
+Your host web application can contain any application-specific code,
+and you can extend the built-in features and modify the default behaviors using the Platformus public API.
 
-1. Create an ASP.NET Core web application (or use an existing one):
+1. Create an ASP.NET Core host web application (or use an existing one):
 
 .. image:: /images/getting_started/use_as_nuget_packages/1.png
 
@@ -79,7 +81,7 @@ Add the ``applicationBuilder.UsePlatformus()`` extension method call inside the 
 
 Don’t forget to include the ``Platformus.WebApplication.Extensions`` namespace in order these extension methods to be resolved.
 
-4. Execute Platformus `database scripts <https://platformus.readthedocs.io/en/latest/getting_started/database_scripts.html>`_ on your database.
+4. Execute the Platformus :ref:`database scripts<Database Scripts>`_ on your database.
 
 5. Run your web application and navigate to /backend to configure Platformus.
 Use the default "admin@platformus.net" and "admin" credentials to sign in.

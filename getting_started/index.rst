@@ -1,8 +1,8 @@
 ﻿Getting Started
 ===============
 
-Using the Platformus CMS as the NuGet packages is the preferred way
-(unless you consider the source code only as a starting point for your own project and do not need any updates in the future).
+To start using Platformus CMS you need to either reference it as the NuGet packages (the preferred way) or the source code,
+prepare the database by executing the database scripts (with both schema and data), and describe content.
 
 .. toctree::
    :titlesonly:

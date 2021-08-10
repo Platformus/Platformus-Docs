@@ -1,18 +1,16 @@
 ﻿Use as Sources
 ==============
 
-To use Platformus CMS as the source code create a host web application,
-copy the Platformus source code to the solution folder and add corresponding project dependencies.
-Please keep in mind that compilation takes longer in this case, so include only the sources of the projects you really need.
+Use Platformus CMS as the source code only if you consider it as a starting point for your own project and do not need any updates in the future.
 
-1. Create an ASP.NET Core web application (or use an existing one):
+1. Create an ASP.NET Core host web application (or use an existing one):
 
 .. image:: /images/getting_started/use_as_sources/1.png
 
 .. image:: /images/getting_started/use_as_sources/2.png
 
 2. Download `Platformus sources <https://github.com/Platformus/Platformus/tree/master/src>`_ from the GitHub.
-Copy them into your solution.
+Copy them into your solution folder.
 
 3. Add dependencies on the following projects to your web application project:
 
@@ -68,7 +66,7 @@ Add the ``applicationBuilder.UsePlatformus()`` extension method call inside the 
 Don’t forget to include the ``Platformus.WebApplication.Extensions`` namespace in order these extension methods
 to be resolved.
 
-4. Execute Platformus `database scripts <https://platformus.readthedocs.io/en/latest/getting_started/database_scripts.html>`_ on your database.
+4. Execute the Platformus :ref:`database scripts<Database Scripts>`_ on your database.
 
 5. Run your web application and navigate to /backend to configure Platformus.
 Use the default "admin@platformus.net" and "admin" credentials to sign in.
