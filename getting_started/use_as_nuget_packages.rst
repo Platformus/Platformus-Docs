@@ -81,7 +81,7 @@ Add the ``applicationBuilder.UsePlatformus()`` extension method call inside the 
 
 Don’t forget to include the ``Platformus.WebApplication.Extensions`` namespace in order these extension methods to be resolved.
 
-4. Execute the Platformus :ref:`database scripts <database-scripts>`_ on your database.
+4. Execute the Platformus :ref:`database scripts <database-scripts>` on your database.
 
 5. Run your web application and navigate to /backend to configure Platformus.
 Use the default "admin@platformus.net" and "admin" credentials to sign in.
