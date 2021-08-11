@@ -1,4 +1,6 @@
-﻿Platformus.Website
+﻿.. _platformus.website:
+
+Platformus.Website
 ==================
 
 Adds the object-oriented data model (classes, members, objects, properties, and relations to create, edit, and display content without writing code),

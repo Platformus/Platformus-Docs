@@ -1,4 +1,6 @@
-﻿Platformus.Core
+﻿.. _platformus.core:
+
+Platformus.Core
 ===============
 
 Provides such basic things like users, credentials, roles, permissions, configurations, and cultures. Contains default extendable backend UI.

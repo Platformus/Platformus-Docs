@@ -1,4 +1,6 @@
-﻿Custom Endpoints
+﻿.. _custom-request-processors:
+
+Custom Endpoints
 ================
 
 As we have discussed in the `Introduction <https://docs.platformus.net/en/latest/introduction/index.html>`_ and

@@ -1,4 +1,6 @@
-﻿Custom Data Sources
+﻿.. _custom-data-providers:
+
+Custom Data Sources
 ===================
 
 To avoid the need for writing a separate endpoint each time we need different data to process the request,

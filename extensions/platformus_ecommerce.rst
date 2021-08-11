@@ -1,4 +1,6 @@
-﻿Platformus.ECommerce
+﻿.. _platformus.ecommerce:
+
+Platformus.ECommerce
 ====================
 
 Implements standard ecommerce features like categories, products, photos, carts, and orders in a very basic way.

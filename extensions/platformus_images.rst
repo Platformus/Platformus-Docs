@@ -1,4 +1,6 @@
-﻿Platformus.Images
+﻿.. _platformus.images:
+
+Platformus.Images
 ==================
 
 Provides basic image processing (cropping and resizing).

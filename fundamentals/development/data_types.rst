@@ -1,4 +1,6 @@
-﻿Data Types
+﻿.. _data-types:
+
+Data Types
 ==========
 
 Data types are used to describe how the object property values should be stored, displayed, and edited in the backend.
