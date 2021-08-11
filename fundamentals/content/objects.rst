@@ -1,16 +1,16 @@
 ﻿Objects
 =======
 
-Object is the central part of the Platformus data model. It is an elementary piece of the information.
+Object is the central part of the default Platformus CMS data model. It is an elementary piece of the information.
 Objects are described by classes and members and consist of properties and relations. You can manage them
-(add, edit, and delete) from the backend using the :guilabel:`Content/Objects` section:
+(create, edit, and delete) from the backend using the :guilabel:`Content/Objects` section:
 
 .. image:: /images/fundamentals/content/objects/1.png
 
-As we said, objects consist of properties and relationships and are described by classes and members.
-Each property has its own client-side JavaScript editor, which is specified by the data type of the member.
+As we said, objects consist of properties and relations and are described by classes and members.
+Each property has its own client-side JavaScript editor, which is specified by the :ref:`data type <data-types>` of the member.
 You can create your own data types and client-side JavaScript editors. Also, data types specify
-which `primitive storage data type <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Domain.Data.Entities/StorageDataType.cs#L6>`_
+which `primitive storage data type <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website.Data.Entities/StorageDataTypes.cs#L6>`_
 should be used to store the particular property value (integer, decimal, string and datetime are supported).
 String properties can be localizable and nonlocalizable.
 
