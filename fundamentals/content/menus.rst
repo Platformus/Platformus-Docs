@@ -10,7 +10,7 @@ Each menu item has localized name, URL, and position. Position might be used to 
 
 .. image:: /images/fundamentals/content/menus/2.png
 
-After menu is created, you can display it on the frontend using the built-in MenuViewComponent class like this
+After menu is created, you can display it on the frontend using the built-in `MenuViewComponent` class like this
 (the menu code is passed as the parameter to identify the menu we want to display):
 
 .. code-block:: html
@@ -20,7 +20,7 @@ After menu is created, you can display it on the frontend using the built-in Men
 
 As you can see, an additional CSS class might be applied using the corresponding optional parameter.
 
-The menu will be displayed using the built-in views
+Menu will be displayed using the built-in views
 (`_Menu <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Menus.Frontend/Views/Shared/_Menu.cshtml>`_ and
 `_MenuItem <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Menus.Frontend/Views/Shared/_MenuItem.cshtml>`_).
 The HTML elements have unique CSS classes (the `BEM <https://getbem.com/>`_ methodology is used), so it is easy
@@ -42,5 +42,5 @@ to apply styles to them:
       </div>
     </div>
 
-If you want to change the HTML, just copy the views into your project and they will be used instead of the built-in ones,
+If you want to change the HTML, just copy these default views into your project and they will be used instead of the built-in ones,
 so you will be able to modify them as you want.
