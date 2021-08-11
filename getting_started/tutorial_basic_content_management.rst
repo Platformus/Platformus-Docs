@@ -1,7 +1,7 @@
 ﻿Tutorial: Basic Content Management
 ==================================
 
-To understand better how the Platformus content management works let’s use the
+To understand better how the Platformus content management works, let’s use the
 `default personal website <https://github.com/Platformus/Platformus-Sample-Personal-Website>`_ sample and add blog feature to it.
 
 There are two ways to work with content using Platformus CMS: using the built-in :ref:`Website extension <platformus.website>` and writing a custom one.
@@ -12,12 +12,12 @@ using the classes and members to describe content, and objects, properties, and 
 Writing custom extension is more complex task, but in this case performance and flexibility are maximized.
 In this tutorial we will go the first way.
 
-First of all, we need the blog post pages. Each post post should have the same properties as the regular page,
-but also it needs preview (the small piece of content), image, and creation date. In the Platformus context,
+First of all, we need the blog post pages. Each post page should have the same properties as the regular page,
+but also it needs preview (a small piece of content), image, and creation date. In the Platformus context,
 all the pages are objects which are described by the classes. Therefore, to create new type of page
 (and new type of object) we need to create the corresponding class first.
 
-Go and login to the backend (navigate to `https://localhost:5000/backend/ <https://localhost:5000/backend/>`_)
+Go to the backend and sign in (navigate to `https://localhost:5000/backend/ <https://localhost:5000/backend/>`_)
 and then go to the :guilabel:`Administration/Classes` section. There are already two classes here: ``Page`` and ``Regular Page``.
 The ``Page`` class is abstract, it means that it is used as the base class for the other ones (class copies all the members
 of its parent class). Click the :guilabel:`Members` link of the ``Page`` class to see the list of its members.
@@ -50,12 +50,12 @@ Now click the :guilabel:`Property` tab and fill the fields as shown below:
 .. image:: /images/getting_started/tutorial_basic_content_management/4.png
 
 When you change the property data type, the set of the fields on this tab is changed too. You can add your own data types
-and specify their properties (as well as the client-side editors that are used to edit them) in the `Data types <data-types>` section.
+and specify their properties (as well as the client-side editors that are used to edit them) in the :ref:`Data types <data-types>` section.
 For the properties that have short values we can set the :guilabel:`Is property visible in list` checkbox,
 so that properties will be displayed in the object list (we will see that later).
 Now click the :guilabel:`Save` button again, our member is created.
 
-Add the ``Image`` and ``Creation date`` members in the same way (but select the ``Image`` and ``Date`` property types for them).
+Add the ``Image`` and ``Creation date`` members in the same way (but select the ``Image`` and ``Date`` property data types for them).
 Our member list will look like this:
 
 .. image:: /images/getting_started/tutorial_basic_content_management/5.png
@@ -112,12 +112,12 @@ to the view model.
 
 Data sources specify the C# classes that implement the
 `IDataProvider <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website/DataProviders/IDataProvider.cs#L12>`_
-interface, you can `create your own ones <custom-data-providers>`. They can provide data in any way you need: to load some objects,
+interface, you can :ref:`create your own ones <custom-data-providers>`. They can provide data in any way you need: to load some objects,
 to take it from the web services (weather forecast?), or to return some hardcoded values. All the data sources
 that are used to process the particular request are grouped inside the endpoint. Endpoints process the requests
 and return response in Platformus-based web applications (as well as data sources, they specify C# classes that implement the
 `IRequestProcessor <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website/RequestProcessors/IRequestProcessor.cs#L12>`_
-interface, and you can `create your own implementations <custom- request-processors>`_). We will see how this all works a bit later in this article.
+interface, and you can :ref:`create your own implementations <custom-request-processors>`). We will see how this all works a bit later in this article.
 
 We have described and created the content (our post page object), we have also created the presentation for that content
 (our view). The last thing we must do to make it all work is to create the endpoint and the data source.
@@ -135,7 +135,7 @@ for the endpoint, you tell the instance of the
 interface which endpoint it should use to process the particular request (you can use {*url} one to handle all the requests).
 It is done the similar way as the MVC routes configuration (endpoint is something like route and controller at once;
 endpoints support URL parameters too). Also, you can specify which C# class (implementation of the ``IRequestProcessor`` interface)
-will process the request. You can write your own implementations of that interface and use them to process the requests.
+will process the request and return the result. You can write your own implementations of that interface and use them to process the requests.
 Specify the view name that we have created earlier that will be used by this endpoint to render the response.
 Click the :guilabel:`Save` button to create our new endpoint:
 
