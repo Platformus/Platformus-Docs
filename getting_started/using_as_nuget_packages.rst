@@ -1,18 +1,20 @@
-﻿Use as Sources
-==============
+﻿Using as the NuGet Packages
+===========================
 
-Use Platformus CMS as the source code only if you consider it as a starting point for your own project and do not need any updates in the future.
+Using Platformus CMS as the NuGet packages is the preferred way
+(unless you consider the source code only as a starting point for your own project and do not need any updates in the future).
+Your host web application can contain any application-specific code,
+and you can extend the built-in features and modify the default behaviors using the Platformus public API.
 
 1. Create an ASP.NET Core host web application (or use an existing one):
 
-.. image:: /images/getting_started/use_as_sources/1.png
+.. image:: /images/getting_started/use_as_nuget_packages/1.png
 
-.. image:: /images/getting_started/use_as_sources/2.png
+.. image:: /images/getting_started/use_as_nuget_packages/2.png
 
-2. Download `Platformus sources <https://github.com/Platformus/Platformus/tree/master/src>`_ from the GitHub.
-Copy them into your solution folder.
+2. Open NuGet Package Manager and add dependencies on the following Platformus packages:
 
-3. Add dependencies on the following projects to your web application project:
+.. image:: /images/getting_started/use_as_nuget_packages/3.png
 
 * Platformus.Core.Data.EntityFramework.Sqlite;
 * Platformus.Images;
@@ -21,7 +23,21 @@ Copy them into your solution folder.
 * Platformus.Website.Frontend;
 * Platformus.WebApplication.
 
-4. Open your ``Startup`` class.
+Or you can add them manually by editing .csproj file of your web application project:
+
+.. code-block:: xml
+    :emphasize-lines: 2-7
+
+    <ItemGroup>
+      <PackageReference Include="Platformus.Core.Data.EntityFramework.Sqlite" Version="2.4.0" />
+      <PackageReference Include="Platformus.Images" Version="2.4.0" />
+      <PackageReference Include="Platformus.Website.Backend" Version="2.4.0" />
+      <PackageReference Include="Platformus.Website.Data.EntityFramework.SqlServer" Version="2.4.0" />
+      <PackageReference Include="Platformus.Website.Frontend" Version="2.4.0" />
+      <PackageReference Include="Platformus.WebApplication" Version="2.4.0" />
+    </ItemGroup>
+
+3. Open your ``Startup`` class.
 
 Add the ``services.AddPlatformus()`` extension method call inside the ``ConfigureServices`` method:
 
@@ -63,8 +79,7 @@ Add the ``applicationBuilder.UsePlatformus()`` extension method call inside the 
       applicationBuilder.UsePlatformus();
     }
 
-Don’t forget to include the ``Platformus.WebApplication.Extensions`` namespace in order these extension methods
-to be resolved.
+Don’t forget to include the ``Platformus.WebApplication.Extensions`` namespace in order these extension methods to be resolved.
 
 4. Execute the Platformus :ref:`database scripts <database-scripts>` on your database.
 

@@ -7,7 +7,8 @@ prepare the database by executing the database scripts (with both schema and dat
 .. toctree::
    :titlesonly:
 
-   use_as_nuget_packages
-   use_as_sources
+   samples
+   using_as_nuget_packages
+   using_as_source_code
    database_scripts
    tutorial_basic_content_management
