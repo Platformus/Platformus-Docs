@@ -185,16 +185,16 @@ Also we have to create the _Post.cshtml partial view (inside the Shared folder):
     @model dynamic
     <div class="posts__post post">
       <h2>
-        <a href="/@System.Globalization.CultureInfo.CurrentUICulture.TwoLetterISOLanguageName@Model.Url">@Model.Name</a>
+        <a href="/@System.Globalization.CultureInfo.CurrentUICulture.TwoLetterISOLanguageName@Model.Url">@Model.Title</a>
       </h2>
       <div class="post__cover">
         <a href="/@System.Globalization.CultureInfo.CurrentUICulture.TwoLetterISOLanguageName@Model.Url">
-          <img class="post__cover-image" src="@Model.Cover" alt="@Model.Name" />
+          <img class="post__cover-image" src="@Model.Image" alt="@Model.Title" />
         </a>
       </div>
       @Html.Raw(this.Model.Preview)
       <div class="post__created">
-        @Model.Created
+        @Model.CreationDate
       </div>
     </div>
 
