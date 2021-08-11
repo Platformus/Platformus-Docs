@@ -50,7 +50,7 @@ Now click the :guilabel:`Property` tab and fill the fields as shown below:
 .. image:: /images/getting_started/tutorial_basic_content_management/4.png
 
 When you change the property data type, the set of the fields on this tab is changed too. You can add your own data types
-and specify their properties (as well as the client-side editors that are used to edit them) in the :ref:`Data types <data-types>` section.
+and specify their properties (as well as the client-side editors that are used to edit them) in the :ref:`data types <data-types>` section.
 For the properties that have short values we can set the :guilabel:`Is property visible in list` checkbox,
 so that properties will be displayed in the object list (we will see that later).
 Now click the :guilabel:`Save` button again, our member is created.
