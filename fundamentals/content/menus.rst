@@ -21,8 +21,8 @@ After menu is created, you can display it on the frontend using the built-in ``M
 As you can see, an additional CSS class might be applied using the corresponding optional parameter.
 
 Menu will be displayed using the built-in views
-(`_Menu <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Menus.Frontend/Views/Shared/_Menu.cshtml>`_ and
-`_MenuItem <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Menus.Frontend/Views/Shared/_MenuItem.cshtml>`_).
+(`_Menu <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website.Frontend/Views/Shared/_Menu.cshtml>`_ and
+`_MenuItem <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website.Frontend/Views/Shared/_MenuItem.cshtml>`_).
 The HTML elements have unique CSS classes (the `BEM <https://getbem.com/>`_ methodology is used), so it is easy
 to apply styles to them:
 
