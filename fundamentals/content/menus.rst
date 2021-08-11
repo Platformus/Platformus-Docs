@@ -10,7 +10,7 @@ Each menu item has localized name, URL, and position. Position might be used to 
 
 .. image:: /images/fundamentals/content/menus/2.png
 
-After menu is created, you can display it on the frontend using the built-in `MenuViewComponent` class like this
+After menu is created, you can display it on the frontend using the built-in ``MenuViewComponent`` class like this
 (the menu code is passed as the parameter to identify the menu we want to display):
 
 .. code-block:: html
