@@ -1,7 +1,7 @@
 ﻿Menus
 =====
 
-Menus are used for navigation on the frontend. You can manage them (add, edit, and delete) from the backend
+Menus are used for navigation on the frontend. You can manage them (create, edit, and delete) from the backend
 using the :guilabel:`Content/Menus` section:
 
 .. image:: /images/fundamentals/content/menus/1.png
@@ -10,17 +10,28 @@ Each menu item has localized name, URL, and position. Position might be used to 
 
 .. image:: /images/fundamentals/content/menus/2.png
 
-After menu is created, you can display it on the frontend using the built-in ``MenuViewComponent`` class like this
+After menu is created, you can display it on the frontend using the built-in ``MenuViewComponent`` view component like this
 (the menu code is passed as the parameter to identify the menu we want to display):
 
 .. code-block:: html
     :emphasize-lines: 1
 
     @await Component.InvokeAsync("Menu", new { code = "Main", additionalCssClass = "master-detail__menu" })
+	
+Or using the view component tag helper:
+
+.. code-block:: html
+    :emphasize-lines: 1
+
+    <vc:menu code="Main" additional-css-class="master-detail__menu" />
 
 As you can see, an additional CSS class might be applied using the corresponding optional parameter.
 
-Menu will be displayed using the built-in views
+The result can look something like this (note that the current menu item is highlighted):
+
+.. image:: /images/fundamentals/content/menus/3.png
+
+Menus are displayed using the built-in views
 (`_Menu <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website.Frontend/Views/Shared/_Menu.cshtml>`_ and
 `_MenuItem <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website.Frontend/Views/Shared/_MenuItem.cshtml>`_).
 The HTML elements have unique CSS classes (the `BEM <https://getbem.com/>`_ methodology is used), so it is easy

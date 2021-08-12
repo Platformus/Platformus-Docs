@@ -1,22 +1,21 @@
 ﻿Forms
 =====
 
-Forms are used to get and process user input on the frontend. You can manage them (add, edit, and delete) from the backend
+Forms are used to get and process user input on the frontend. You can manage them (create, edit, and delete) from the backend
 using the :guilabel:`Content/Forms` section:
 
 .. image:: /images/fundamentals/content/forms/1.png
 
-Each form has code and localized name. The :guilabel:`Produce completed forms` checkbox allows to specify whether you want
-completed forms to be created each time user fills the form. You can review completed forms (user input) from the backend
-any time if they are created.
+Each form has code, localized name and submit button title. The :guilabel:`Produce completed forms` checkbox allows to specify
+whether you want completed forms to be created each time user fills the form.
+You can review completed forms (user input) from the backend any time if they are created.
 
-:guilabel:`C# class name` field allows you to specify the implementation of the
-`IFormHandler <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Forms/FormHandlers/IFormHandler.cs#L11>`_
+:guilabel:`Form handler C# class name` field allows you to specify the implementation of the
+`IFormHandler <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website/FormHandlers/IFormHandler.cs#L13>`_
 interface that will handle the user input for this form. There is the only one built-in implementation of this interface:
-the `EmailFormHandler <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Forms.Frontend/FormHandlers/EmailFormHandler.cs#L17>`_
+the `EmailFormHandler <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website.Frontend/FormHandlers/EmailFormHandler.cs#L19>`_
 class. It sends the user input to the specified recipients by the email. You can write your own implementations
-of this interface. For example, you can have form handler that creates objects using the user input and
-Platformus `object mappers <https://docs.platformus.net/en/latest/advanced/object_mapping.html>`_.
+of this interface. For example, you can have form handler that creates comments using the user input on a blog post page.
 
 Each form handler can have different (specified by the developer) parameters, which use different parameter editors.
 Parameter editors might be created by the developer too. (The built-in form handler has two parameters: :guilabel:`Recipient emails`
@@ -29,21 +28,32 @@ localized name, and position. Position might be used to sort the fields in the c
 
 .. image:: /images/fundamentals/content/forms/3.png
 
-Also, fields have validation parameters.
+Also, fields might have validation parameters and a predefined set of options.
 
-After form is created, you can display it on the frontend using the built-in FormViewComponent class like this
+After form is created, you can display it on the frontend using the built-in ``FormViewComponent`` view component like this
 (the form code is passed as the parameter to identify the form we want to display):
 
 .. code-block:: html
     :emphasize-lines: 1
 
     @await Component.InvokeAsync("Form", new { code = "Feedback", additionalCssClass = "master-detail__form" })
+	
+Or using the view component tag helper:
+
+.. code-block:: html
+    :emphasize-lines: 1
+
+    <vc:form code="Feedback" additional-css-class="master-detail__form" />
 
 As you can see, an additional CSS class might be applied using the corresponding optional parameter.
 
-The form will be displayed using the built-in views
-(`_Form <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Forms.Frontend/Views/Shared/_Form.cshtml>`_ and
-`_Field <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Forms.Frontend/Views/Shared/_Field.cshtml>`_).
+The result can look something like this:
+
+.. image:: /images/fundamentals/content/forms/4.png
+
+Forms are displayed using the built-in views
+(`_Form <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website.Frontend/Views/Shared/_Form.cshtml>`_ and
+`_Field <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website.Frontend/Views/Shared/_Field.cshtml>`_).
 The HTML elements have unique CSS classes (the `BEM <https://getbem.com/>`_ methodology is used), so it is easy
 to apply styles to them:
 
