@@ -14,10 +14,6 @@ Each endpoint has name, URL template, position, and other fields:
 
 .. image:: /images/fundamentals/development/endpoints/3.png
 
-.. image:: /images/fundamentals/development/endpoints/4.png
-
-.. image:: /images/fundamentals/development/endpoints/5.png
-
 :guilabel:`General/Name`
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -48,6 +44,8 @@ which permissions the user must have.
 
 This URL will be used to redirect user if he must be authenticated or if a required permission is missing.
 
+.. image:: /images/fundamentals/development/endpoints/4.png
+
 :guilabel:`Request processing/Request processor C# class name`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -59,5 +57,15 @@ There is the only one built-in request processor: the
 `DefaultRequestProcessor <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website.Frontend/RequestProcessors/DefaultRequestProcessor.cs#L18>`_
 one. It returns views (you can specify the view name).
 
-If we are talking about the views, endpoint should provide some information that a view needs using the view model.
-Endpoint creates and initializes a view model using the data sources. Each endpoint can have different :ref`data sources <data-sources>`.
+If we talk about the views, endpoint should provide some information that a view needs using the view model.
+Endpoint creates and initializes a view model using the data sources. Each endpoint can have different :ref:`data sources <data-sources>`.
+
+.. image:: /images/fundamentals/development/endpoints/5.png
+
+:guilabel:`Response caching/Response cache C# class name`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+It allows you to specify, which C# class (implementation of the
+`IResponseCache <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website/ResponseCaches/IResponseCache.cs#L10>`_
+is used to cache the endpoint response. There are several built-in `implementations of this interface <https://github.com/Platformus/Platformus/tree/master/src/Platformus.Website.Frontend/ResponseCaches>`_,
+but you can write your own ones.

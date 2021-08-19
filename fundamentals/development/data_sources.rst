@@ -4,9 +4,9 @@ Data Sources
 ============
 
 Each endpoint needs data sources to be able to build a model. Data sources use the specified implementation of the
-<https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website/DataProviders/IDataProvider.cs#L12>`_
-to provide data to the endpoint. You can manage them (create, edit, and delete) from the backend using the
-:guilabel:`Data sources` section of every :ref:`endpoint <endpoints>`:
+`IDataProvider <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website/DataProviders/IDataProvider.cs#L12>`_ interface
+to provide data to the endpoints. You can manage them (create, edit, and delete) from the backend using the
+:guilabel:`Data sources` section of the endpoints :ref:`endpoint <endpoints>`:
 
 .. image:: /images/fundamentals/development/data_sources/1.png
 
