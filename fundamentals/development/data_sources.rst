@@ -6,7 +6,7 @@ Data Sources
 Each endpoint needs data sources to be able to build a model. Data sources use the specified implementation of the
 `IDataProvider <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website/DataProviders/IDataProvider.cs#L12>`_ interface
 to provide data to the endpoints. You can manage them (create, edit, and delete) from the backend using the
-:guilabel:`Data sources` section of the endpoints :ref:`endpoint <endpoints>`:
+:guilabel:`Data sources` section of the :ref:`endpoints <endpoints>`:
 
 .. image:: /images/fundamentals/development/data_sources/1.png
 
@@ -24,7 +24,7 @@ your model (for example, a view model) will have a property with this name.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 It allows you to specify, which C# class (implementation of the
-`IRequestProcessor <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website/DataProviders/IDataProvider.cs#L12>`_
+`IDataProvider <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website/DataProviders/IDataProvider.cs#L12>`_
 interface) will provide data for this data source.
 
 There are few built-in data providers.
