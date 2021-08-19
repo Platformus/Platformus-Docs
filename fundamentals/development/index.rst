@@ -6,4 +6,4 @@
 
    data_types
    classes
-   bundles
+   endpoints
