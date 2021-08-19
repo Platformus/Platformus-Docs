@@ -7,3 +7,4 @@
    data_types
    classes
    endpoints
+   data_sources

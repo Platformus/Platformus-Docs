@@ -17,7 +17,7 @@ Each data type has storage data type, JavaScript editor class name, name, and po
 
 It is the database-level (real) data type that is used to store the property values of this Platformus-level data type.
 You can have multiple Platformus-level data types (with totally different purpose) with the same database-level data type.
-For example, ``Single line plain text`` and ``Image`` data types both use string as storage data type.
+For example, ``Single line plain text`` and ``Image`` data types both use string as the storage data type.
 
 :guilabel:`JavaScript editor class name`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -27,7 +27,7 @@ This object is used to build the client-side editors for the Platformus-level ob
 For example, please take a look at the `singleLinePlainText <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website.Backend/Areas/Backend/Scripts/MemberEditors/single_line_plain_text_member_editor.js#L6>`_ editor.
 
 When the object page is going to be displayed in the backend, editors for all the object properties are created.
-Each editor is created using `such JavaScript object <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website.Backend/Areas/Backend/Scripts/MemberEditors/member_editors.js#L23-L29>`_.
+Each editor is created using `such JavaScript code <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website.Backend/Areas/Backend/Scripts/MemberEditors/member_editors.js#L23-L29>`_.
 
 You can easily write your own JavaScript client-side editors and then use them in the standard or custom data types.
 
