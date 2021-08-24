@@ -3,7 +3,7 @@
 
 Configurations and variables are used to provide user-defined configuration parameters to the web application
 (while developer-defined ones can be provided using the appsettings.json file).
-You can manage them (crate, edit, and delete) from the backend using the :guilabel:`Administration/Configurations` section:
+You can manage them (create, edit, and delete) from the backend using the :guilabel:`Administration/Configurations` section:
 
 .. image:: /images/fundamentals/administration/configurations/1.png
 
