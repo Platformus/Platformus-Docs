@@ -1,2 +1,2 @@
-﻿Delivery Methods
-================
+﻿Payment Methods
+===============

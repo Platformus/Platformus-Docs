@@ -40,3 +40,5 @@ Name is used to identify the data types in the backend.
 ~~~~~~~~~~~~~~~~~~~~
 
 Position is used to sort the data types in the lists.
+
+Data types can have :ref:`parameters <data-type-parameters>`.

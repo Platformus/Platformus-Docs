@@ -18,7 +18,7 @@ Each data type parameter has JavaScript editor class name, code, and name:
 :guilabel:`JavaScript editor class name`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Data type parameters can have `different type <https://github.com/Platformus/Platformus/tree/master/src/Platformus.Core.Backend/Areas/Backend/Scripts/ParameterEditors>`_.
+Data type parameters can have `different types <https://github.com/Platformus/Platformus/tree/master/src/Platformus.Core.Backend/Areas/Backend/Scripts/ParameterEditors>`_.
 For example, ``textBox`` or ``checkbox``. It determines how user edits the parameter's value.
 
 :guilabel:`Code`
