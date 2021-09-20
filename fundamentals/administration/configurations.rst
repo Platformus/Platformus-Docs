@@ -1,4 +1,6 @@
-﻿Configurations
+﻿.. _configurations:
+
+Configurations
 ==============
 
 Configurations and variables are used to provide user-defined configuration parameters to the web application
