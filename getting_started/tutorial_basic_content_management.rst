@@ -52,8 +52,8 @@ Now click the :guilabel:`Property` tab and fill the fields as shown below:
 
 .. image:: /images/getting_started/tutorial_basic_content_management/5.png
 
-When you change the property data type, the set of the fields on this tab is changed too. You can add your own data types
-and specify their properties (as well as the client-side editors that are used to edit them) in the :ref:`data types <data-types>` section.
+When you change the property data type, the set of the fields on this tab is changed too. You can add your own :ref:`data types <data-types>`
+and specify their properties (as well as the client-side editors that are used to edit them).
 For the properties that have short values we can set the :guilabel:`Is property visible in list` checkbox,
 so that properties will be displayed in the object list (we will see that later).
 Now click the :guilabel:`Save` button again, our member is created.
@@ -65,12 +65,12 @@ Our member list will look like this:
 
 That’s it, we are done with our data model for now. Let’s add some content. Go to the :guilabel:`Content/Objects` section.
 Objects (and again, our pages are objects) are grouped by the parent classes (pluralized names are used to name the groups).
-Objects of the classes that doesn’t have parent ones go under the Others group. Our ``Blog Post`` class is
+Objects of the classes that doesn’t have parent ones go under the Others group. Our ``Post Page`` class is
 already here:
 
 .. image:: /images/getting_started/tutorial_basic_content_management/7.png
 
-Click the :guilabel:`Create blog post` button:
+Click the :guilabel:`Create post page` button:
 
 .. image:: /images/getting_started/tutorial_basic_content_management/8.png
 
@@ -81,10 +81,10 @@ the :guilabel:`Save` button. New post is created:
 
 There are only the properties are displayed whose members have :guilabel:`Is property visible in list` checkbox checked.
 
-Now we have our blog post object created. We can use different ways to present it (view, API, plain text and so on),
+Now we have our post page object created. We can use different ways to present it (view, API, plain text and so on),
 but now let’s use old good view for that.
 
-Create BlogPostPage.cshtml file inside the Views folder of the web application project with the following content:
+Create PostPage.cshtml file inside the Views folder of the web application project with the following content:
 
 .. code-block:: html
 	
@@ -121,6 +121,7 @@ that are used to process the particular request are grouped inside the endpoint.
 and return response in Platformus-based web applications (as well as data sources, they specify C# classes that implement the
 `IRequestProcessor <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website/RequestProcessors/IRequestProcessor.cs#L12>`_
 interface, and you can :ref:`create your own implementations <custom-request-processors>`). We will see how this all works a bit later in this article.
+You can still use regular C# controllers to process requests which is simple, but it is related to writing custom extensions and is not considered in this tutorial.
 
 We have described and created the content (our post page object), we have also created the presentation for that content
 (our view). The last thing we must do to make it all work is to create the endpoint and the data source.
@@ -132,12 +133,12 @@ as shown below:
 .. image:: /images/getting_started/tutorial_basic_content_management/11.png
 
 Endpoints define how your Platformus-based web application processes the HTTP requests.
-By default, if there are no endpoints configured, you will have 404 response on every request. By specifying the URL template
+By default, if there are no endpoints (and regular C# controllers or pages) configured, you will have 404 response on every request. By specifying the URL template
 for the endpoint, you tell the instance of the
 `IEndpointResolver <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website.Frontend/Services/Abstractions/IEndpointResolver.cs#L9>`_
 interface which endpoint it should use to process the particular request (you can use {*url} one to handle all the requests).
 It is done the similar way as the MVC routes configuration (endpoint is something like route and controller at once;
-endpoints support URL parameters too). Also, you can specify which C# class (implementation of the ``IRequestProcessor`` interface)
+endpoints support URL parameters too) and it is executed after the default MVC routing. Also, you can specify which C# class (implementation of the ``IRequestProcessor`` interface)
 will process the request and return the result. You can write your own implementations of that interface and use them to process the requests.
 Specify the view name that we have created earlier that will be used by this endpoint to render the response.
 Click the :guilabel:`Save` button to create our new endpoint:

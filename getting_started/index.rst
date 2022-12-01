@@ -2,7 +2,7 @@
 ===============
 
 To start using Platformus CMS you need to either reference it as the NuGet packages (the preferred way) or the source code,
-prepare the database by executing the database scripts (with both schema and data), and describe content.
+prepare the database by executing the database scripts (with both schema and data), and create content.
 
 .. toctree::
    :titlesonly:
