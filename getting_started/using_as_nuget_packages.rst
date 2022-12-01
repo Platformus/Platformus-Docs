@@ -29,12 +29,12 @@ Or you can add them manually by editing .csproj file of your web application pro
     :emphasize-lines: 2-7
 
     <ItemGroup>
-      <PackageReference Include="Platformus.Core.Data.EntityFramework.Sqlite" Version="2.4.0" />
-      <PackageReference Include="Platformus.Images" Version="2.4.0" />
-      <PackageReference Include="Platformus.Website.Backend" Version="2.4.0" />
-      <PackageReference Include="Platformus.Website.Data.EntityFramework.SqlServer" Version="2.4.0" />
-      <PackageReference Include="Platformus.Website.Frontend" Version="2.4.0" />
-      <PackageReference Include="Platformus.WebApplication" Version="2.4.0" />
+      <PackageReference Include="Platformus.Core.Data.EntityFramework.Sqlite" Version="4.0.0" />
+      <PackageReference Include="Platformus.Images" Version="4.0.0" />
+      <PackageReference Include="Platformus.Website.Backend" Version="4.0.0" />
+      <PackageReference Include="Platformus.Website.Data.EntityFramework.SqlServer" Version="4.0.0" />
+      <PackageReference Include="Platformus.Website.Frontend" Version="4.0.0" />
+      <PackageReference Include="Platformus.WebApplication" Version="4.0.0" />
     </ItemGroup>
 
 3. Open your ``Startup`` class.

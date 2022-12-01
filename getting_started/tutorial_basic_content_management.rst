@@ -6,7 +6,7 @@ To understand better how the Platformus content management works, let’s use th
 
 There are two ways to work with content using Platformus CMS: using the built-in :ref:`Website extension <platformus.website>` and writing a custom one.
 The first option is suitable when simplicity and speed of development are more important than application performance.
-It works good for website pages, blog categories, posts, and tags etc.
+It works good for website pages, blog categories, posts, tags etc.
 The :ref:`Website extension <platformus.website>` implements the `EAV pattern <https://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model>`_
 using the classes and members to describe content, and objects, properties, and relations to store it.
 Writing custom extension is more complex task, but in this case performance and flexibility are maximized.
@@ -18,18 +18,21 @@ all the pages are objects which are described by the classes. Therefore, to crea
 (and new type of object) we need to create the corresponding class first.
 
 Go to the backend and sign in (navigate to `https://localhost:5000/backend/ <https://localhost:5000/backend/>`_)
-and then go to the :guilabel:`Administration/Classes` section. There are already two classes here: ``Page`` and ``Regular Page``.
+and then go to the :guilabel:`Development/Classes` section. There are already two classes here: ``Page`` and ``Regular Page``.
+
+.. image:: /images/getting_started/tutorial_basic_content_management/1.png
+
 The ``Page`` class is abstract, it means that it is used as the base class for the other ones (class copies all the members
 of its parent class). Click the :guilabel:`Members` link of the ``Page`` class to see the list of its members.
 As you can see, there are the standard page properties here, like ``URL``, ``Content``, ``Title``, ``META description``,
 and ``META keywords``:
 
-.. image:: /images/getting_started/tutorial_basic_content_management/1.png
+.. image:: /images/getting_started/tutorial_basic_content_management/2.png
 
 Now return to the class list and click the :guilabel:`Create class` button. Select the ``Page`` class as the parent class
 for our new one.  Fill the :guilabel:`Code`, :guilabel:`Name`, and :guilabel:`Pluralized name` fields as shown below:
 
-.. image:: /images/getting_started/tutorial_basic_content_management/2.png
+.. image:: /images/getting_started/tutorial_basic_content_management/3.png
 
 Click the :guilabel:`Save` button. New class is created. Now go to the list of its members. It is empty for now
 (but don’t forget that our class will have all the members from the ``Page`` class, because it is selected
@@ -38,7 +41,7 @@ as the parent one).
 Let’s add the ``Preview`` member to our class. Click the :guilabel:`Create member` button and fill the :guilabel:`Code`,
 :guilabel:`Name`, and :guilabel:`Position` fields as shown below:
 
-.. image:: /images/getting_started/tutorial_basic_content_management/3.png
+.. image:: /images/getting_started/tutorial_basic_content_management/4.png
 
 If we had a lot of the members, we could use tabs to group them on the object edit page, but in our case,
 we only use it to group the properties that are related to SEO in the parent class. Position is set to 5,
@@ -47,7 +50,7 @@ because we want our property editor to appear before the ``Content`` property on
 
 Now click the :guilabel:`Property` tab and fill the fields as shown below:
 
-.. image:: /images/getting_started/tutorial_basic_content_management/4.png
+.. image:: /images/getting_started/tutorial_basic_content_management/5.png
 
 When you change the property data type, the set of the fields on this tab is changed too. You can add your own data types
 and specify their properties (as well as the client-side editors that are used to edit them) in the :ref:`data types <data-types>` section.
@@ -58,30 +61,30 @@ Now click the :guilabel:`Save` button again, our member is created.
 Add the ``Image`` and ``Creation date`` members in the same way (but select the ``Image`` and ``Date`` property data types for them).
 Our member list will look like this:
 
-.. image:: /images/getting_started/tutorial_basic_content_management/5.png
+.. image:: /images/getting_started/tutorial_basic_content_management/6.png
 
 That’s it, we are done with our data model for now. Let’s add some content. Go to the :guilabel:`Content/Objects` section.
 Objects (and again, our pages are objects) are grouped by the parent classes (pluralized names are used to name the groups).
-Objects of the classes that doesn’t have parent ones go under the Others group. Our ``Post Page`` class is
+Objects of the classes that doesn’t have parent ones go under the Others group. Our ``Blog Post`` class is
 already here:
 
-.. image:: /images/getting_started/tutorial_basic_content_management/6.png
-
-Click the :guilabel:`Create post page` button:
-
 .. image:: /images/getting_started/tutorial_basic_content_management/7.png
+
+Click the :guilabel:`Create blog post` button:
+
+.. image:: /images/getting_started/tutorial_basic_content_management/8.png
 
 As you can see, all the properties we have defined in the corresponding class are here. Fill the fields and click
 the :guilabel:`Save` button. New post is created:
 
-.. image:: /images/getting_started/tutorial_basic_content_management/8.png
+.. image:: /images/getting_started/tutorial_basic_content_management/9.png
 
 There are only the properties are displayed whose members have :guilabel:`Is property visible in list` checkbox checked.
 
-Now we have our post page object created. We can use different ways to present it (view, API, plain text and so on),
+Now we have our blog post object created. We can use different ways to present it (view, API, plain text and so on),
 but now let’s use old good view for that.
 
-Create PostPage.cshtml file inside the Views folder of the web application project with the following content:
+Create BlogPostPage.cshtml file inside the Views folder of the web application project with the following content:
 
 .. code-block:: html
 	
@@ -124,9 +127,9 @@ We have described and created the content (our post page object), we have also c
 Go to the :guilabel:`Development/Endpoints` section. Click the :guilabel:`Create endpoint` button and fill the fields
 as shown below:
 
-.. image:: /images/getting_started/tutorial_basic_content_management/9.png
-
 .. image:: /images/getting_started/tutorial_basic_content_management/10.png
+
+.. image:: /images/getting_started/tutorial_basic_content_management/11.png
 
 Endpoints define how your Platformus-based web application processes the HTTP requests.
 By default, if there are no endpoints configured, you will have 404 response on every request. By specifying the URL template
@@ -139,7 +142,7 @@ will process the request and return the result. You can write your own implement
 Specify the view name that we have created earlier that will be used by this endpoint to render the response.
 Click the :guilabel:`Save` button to create our new endpoint:
 
-.. image:: /images/getting_started/tutorial_basic_content_management/11.png
+.. image:: /images/getting_started/tutorial_basic_content_management/12.png
 
 One more thing about the endpoints. Default implementation of the ``IEndpointResolver`` interface checks endpoints,
 sorted by the position, one by one (whether the current one’s URL template matches the request’s URL or not).
@@ -149,12 +152,12 @@ The last thing we have to do is to add the data source that will load the post p
 and assign it to the view model’s ``Page`` property (that will also be created). Click the :guilabel:`Data sources` link and then the
 :guilabel:`Create data source` button. Fill all the fields as shown below and click the :guilabel:`Save` button:
 
-.. image:: /images/getting_started/tutorial_basic_content_management/12.png
+.. image:: /images/getting_started/tutorial_basic_content_management/13.png
 
 That’s it. Now we can test how our post page is displayed. Navigate to
 `https://localhost:5000/en/blog/my-first-blog-post <https://localhost:5000/en/blog/my-first-blog-post>`_:
 
-.. image:: /images/getting_started/tutorial_basic_content_management/13.png
+.. image:: /images/getting_started/tutorial_basic_content_management/14.png
 
 It works! But we also need to have a page with all the posts. We will make it quickly, because now you know enough.
 This page will display the posts, so we don’t need to create any new class (just create the regular page object with
@@ -200,9 +203,9 @@ Also we have to create the _Post.cshtml partial view (inside the Shared folder):
 
 Now create the new endpoint (you have to have the separated endpoint for each page template (or view)):
 
-.. image:: /images/getting_started/tutorial_basic_content_management/14.png
-
 .. image:: /images/getting_started/tutorial_basic_content_management/15.png
+
+.. image:: /images/getting_started/tutorial_basic_content_management/16.png
 
 Because the page that will display the list of the posts is the page too, add the Page data source for
 our new endpoint (the same way we have done that for the previous one). It will load our regular page object that holds
@@ -210,7 +213,7 @@ our new endpoint (the same way we have done that for the previous one). It will 
 
 But in order to be able to display the posts on this page, we must add one more data source:
 
-.. image:: /images/getting_started/tutorial_basic_content_management/16.png
+.. image:: /images/getting_started/tutorial_basic_content_management/17.png
 
 As you can see, another C# class is selected as data provider for this data source. It provides more properties for us. For example,
 it allows to specify the class of the objects to load etc.
@@ -218,6 +221,6 @@ it allows to specify the class of the objects to load etc.
 Everything is done. Now you can navigate to `https://localhost:5000/en/blog <https://localhost:5000/en/blog>`_
 and see the result:
 
-.. image:: /images/getting_started/tutorial_basic_content_management/17.png
+.. image:: /images/getting_started/tutorial_basic_content_management/18.png
 
 Click the image to go to the post page. You can add the new menu item in the menu to have your blog there.
