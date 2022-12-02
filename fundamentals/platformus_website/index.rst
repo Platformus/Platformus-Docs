@@ -6,6 +6,21 @@ Platformus.Website
 Adds the object-oriented data model (classes, members, objects, properties, and relations to create, edit, and display content without writing code),
 menus, forms, and file manager. Completely enough for creating simple websites.
 
+.. toctree::
+   :titlesonly:
+
+   objects
+   menus
+   forms
+   file_manager
+   data_types
+   data_type_parameters
+   classes
+   tabs
+   members
+   endpoints
+   data_sources
+   
 Packages
 --------
 

@@ -36,4 +36,3 @@ Contents
    getting_started/index
    fundamentals/index
    advanced/index
-   extensions/index

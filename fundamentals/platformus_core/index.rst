@@ -6,6 +6,15 @@ Platformus.Core
 Provides such basic things like users, credentials, roles, permissions, configurations, and cultures. Contains default extendable backend UI.
 Can be used as a base for the mobile application admin panels etc.
 
+.. toctree::
+   :titlesonly:
+
+   permissions
+   roles
+   users
+   configurations
+   cultures
+
 Packages
 --------
 

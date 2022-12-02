@@ -6,6 +6,17 @@ Platformus.ECommerce
 Implements standard ecommerce features like categories, products, photos, carts, and orders in a very basic way.
 Can be used as a starting point for ecommerce projects.
 
+.. toctree::
+   :titlesonly:
+
+   categories
+   products
+   carts
+   orders
+   order_states
+   delivery_methods
+   payment_methods
+
 Packages
 --------
 
