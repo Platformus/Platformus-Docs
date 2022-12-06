@@ -9,7 +9,7 @@ using the :guilabel:`Audience/Roles` section:
 
 .. image:: /images/fundamentals/audience/roles/1.png
 
-Each role has name, code, and position. Code is used to check role from code, while position might be used to sort the roles in the correct order:
+Each role has name, code, and position. Code is used to check roles from code, while position might be used to sort the roles in the correct order:
 
 .. image:: /images/fundamentals/audience/roles/2.png
 
@@ -18,4 +18,4 @@ Also, on the :guilabel:`Permissions` tab you can assign the permissions to a rol
 .. image:: /images/fundamentals/audience/roles/3.png
 
 The same as :ref:`permissions <permissions>`, roles are attached to a user as the claims while signing in.
-You can check them from the code, but permissions checking is preferred.
+You can check them from the code to control rights and restrict access, but permissions checking is preferred.

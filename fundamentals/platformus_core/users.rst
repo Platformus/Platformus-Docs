@@ -34,6 +34,7 @@ And this is the credential itself:
 
 .. image:: /images/fundamentals/audience/users/5.png
 
-:guilabel:`Secret` can be used to store any additional information. For example, it stores passwords (as hashes) for the email credential type.
-If you need to change the password, just type it in this field. Don’t forget to set the :guilabel:`Apply PBKDF2 hashing to secret`
-checkbox to apply hashing, otherwise your password will be saved as plain text and signing in won’t work (as it compares hashes).
+Secret is optional and can be used to store any additional information. For example, it stores passwords (as hashes)
+for the email and password credential type. If you need to change the password, just type it in this field.
+Don’t forget to set the :guilabel:`Apply PBKDF2 hashing to secret` checkbox to apply hashing,
+otherwise your password will be saved as plain text and signing in won’t work (as it compares hashes).

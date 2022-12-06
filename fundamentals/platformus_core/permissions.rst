@@ -8,7 +8,7 @@ from the backend using the :guilabel:`Audience/Permissions` section:
 
 .. image:: /images/fundamentals/audience/permissions/1.png
 
-Each permission has name, code, and position. Code is used to check permission from code, while position might be used to sort the permissions in the correct order:
+Each permission has name, code, and position. Code is used to check permissions from code, while position might be used to sort the permissions in the correct order:
 
 .. image:: /images/fundamentals/audience/permissions/2.png
 
@@ -26,9 +26,8 @@ These claims then can be checked from the code:
 Platformus uses authorization policies to control access to the controllers and actions:
 
 .. code-block:: cs
-    :emphasize-lines: 2
+    :emphasize-lines: 1
 
-    [Area("Backend")]
     [Authorize(Policy = Policies.HasManageUsersPermission)]
     public class UsersController : ControllerBase { }
 
