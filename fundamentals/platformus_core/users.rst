@@ -17,7 +17,7 @@ Also, on the :guilabel:`Roles` tab you can assign the roles to a user:
 
 .. image:: /images/fundamentals/audience/users/3.png
 
-While user itself has only a name, it doesn’t store any information about how it signs in.
+As user itself has only a name, he doesn’t store any information about how he signs in.
 This information is stored using the
 `Credential <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Core.Data.Entities/Credential.cs#L13>`_
 objects. Each user can have different credentials, and each credential has its
@@ -33,3 +33,7 @@ The credential list looks like this:
 And this is the credential itself:
 
 .. image:: /images/fundamentals/audience/users/5.png
+
+:guilabel:`Secret` can be used to store any additional information. For example, it stores passwords (as hashes) for the email credential type.
+If you need to change the password, just type it in this field. Don’t forget to set the :guilabel:`Apply PBKDF2 hashing to secret`
+checkbox to apply hashing, otherwise your password will be saved as plain text and signing in won’t work (as it compares hashes).

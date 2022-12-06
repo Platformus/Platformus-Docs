@@ -24,7 +24,7 @@ The same as for configurations, code is used to get the variable from code.
 There is the special
 `DefaultConfigurationManager <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Core/Services/Defaults/DefaultConfigurationManager.cs#L12>`_
 class that you can use to access the configurations. It implements the
-`IConfigurationManager <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Core/Services/Abstractions/IConfigurationManager.cs#L6>`_
+`IConfigurationManager <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Core/Services/Abstractions/IConfigurationManager.cs#L9>`_
 interface and it is registered as a service inside the DI, so you can replace it with your own implementation.
 
 This is the usage example:
@@ -39,3 +39,5 @@ This is the usage example:
         string emailSmtpServer = configurationManager["Email", "SmtpServer"];
       }
     }
+
+This will get value of the variable with code ``SmtpServer`` from the configuration with code ``Email``.

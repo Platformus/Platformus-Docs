@@ -8,7 +8,7 @@ from the backend using the :guilabel:`Audience/Permissions` section:
 
 .. image:: /images/fundamentals/audience/permissions/1.png
 
-Each permission has name, code, and position. Position might be used to sort the permissions in the correct order:
+Each permission has name, code, and position. Code is used to check permission from code, while position might be used to sort the permissions in the correct order:
 
 .. image:: /images/fundamentals/audience/permissions/2.png
 
@@ -49,7 +49,7 @@ inside the ``services.AddAuthorization()`` extension method:
 As you can see, the ExtCore framework’s
 `ExtensionManager <https://github.com/ExtCore/ExtCore/blob/master/src/ExtCore.Infrastructure/ExtensionManager.cs#L16>`_
 class is used to get all the instances of the
-`IAuthorizationPolicyProvider <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Core/IAuthorizationPolicyProvider.cs#L8>`_
+`IAuthorizationPolicyProvider <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Core/IAuthorizationPolicyProvider.cs#L14>`_
 interface implementations. Then method ``IAuthorizationPolicyProvider.GetAuthorizationPolicy()`` is used
 to get the authorization policies.
 

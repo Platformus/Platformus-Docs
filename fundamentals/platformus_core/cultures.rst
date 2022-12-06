@@ -6,26 +6,29 @@ You can manage them (create, edit, and delete) from the backend using the :guila
 
 .. image:: /images/fundamentals/administration/cultures/1.png
 
-Each culture has two letter country code (id) and name.
+Each culture has two-letter language code (id, according to ISO 639-1) and name.
 The :guilabel:`Is frontend default` checkbox allows to specify if this culture should be used as the default one on the frontend
 (it means that this culture will be used when the culture is not implicitly selected).
 And the :guilabel:`Is backend default` specifies if this cultured should be used as the backend (admin panel) one.
 
 .. image:: /images/fundamentals/administration/cultures/2.png
 
-You can see that there is the Neutral culture exists in the list. This culture is used to store the culture-neutral string values
-using the `localizations <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Core.Data.Entities/Localization.cs#L12>`_.
-When you describe your data model using the classes and members, you can specify, whether the particular string property
-is localizable or not. If it is localizable, N editors will be displayed, one for each of the cultures. It looks like this:
+You can see that there is the Neutral culture exists in the list. This culture is used by the :ref:`platformus.website <Platformus.Website>`
+extension to store the culture-neutral string values using the `localizations
+<https://github.com/Platformus/Platformus/blob/master/src/Platformus.Core.Data.Entities/Localization.cs#L12>`_.
+When you create your own extension or describe your data model using the classes and members using the Platformus.Website one,
+you can specify, whether the particular string property is localizable or not. If it is localizable, N editors will be displayed,
+one for each of the cultures. It looks like this:
 
 .. image:: /images/fundamentals/administration/cultures/3.png
 
 When your string property is not localizable, the only one editor will be displayed, and the property value will be saved
-using the neutral culture.
+either using the localization with neutral culture (in case the :ref:`platformus.website <Platformus.Website>` extension is used)
+or whatever want it to be saved.
 
-By default, a short two letter culture code segment is used in the URL on the frontend to specify which culture should be used for the request.
+By default, a short two letter language code segment is used in the URL on the frontend to specify which culture should be used for the request.
 For example: /en/some-page. It is done in this way to make it possible for the pages to be indexed by the search engines
-with the different cultures.  But if you are sure that your web application will always support the only one culture,
+with the different languages.  But if you are sure that your web application will always support the only one language,
 you can turn off this behavior using the :ref:`configurations <configurations>` and have shorter URLs.
 In this case, the default culture will be used to display the content (but you can change the way culture is selected
 for the requests).
@@ -33,5 +36,5 @@ for the requests).
 There is the special
 `DefaultCultureManager <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Core/Services/Defaults/DefaultCultureManager.cs#L15>`_
 class that you can use to work with the cultures. It implements the
-`ICultureManager <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Core/Services/Abstractions/ICultureManager.cs#L10>`_
+`ICultureManager <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Core/Services/Abstractions/ICultureManager.cs#L13>`_
 interface and it is registered as a service inside the DI, so you can replace it with your own implementation.

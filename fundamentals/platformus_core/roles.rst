@@ -9,7 +9,7 @@ using the :guilabel:`Audience/Roles` section:
 
 .. image:: /images/fundamentals/audience/roles/1.png
 
-Each role has name, code, and position. Position might be used to sort the roles in the correct order:
+Each role has name, code, and position. Code is used to check role from code, while position might be used to sort the roles in the correct order:
 
 .. image:: /images/fundamentals/audience/roles/2.png
 
