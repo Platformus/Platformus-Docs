@@ -23,10 +23,10 @@ Admin Panel Sections
 Packages
 --------
 
-* `Platformus.ECommerce <https://github.com/Platformus/Platformus/tree/master/src/Platformus.ECommerce>`_;
-* `Platformus.ECommerce.Backend <https://github.com/Platformus/Platformus/tree/master/src/Platformus.ECommerce.Backend>`_;
-* `Platformus.ECommerce.Data.Entities <https://github.com/Platformus/Platformus/tree/master/src/Platformus.ECommerce.Data.Entities>`_;
-* `Platformus.ECommerce.Data.EntityFramework.PostgreSql <https://github.com/Platformus/Platformus/tree/master/src/Platformus.ECommerce.Data.EntityFramework.PostgreSql>`_;
-* `Platformus.ECommerce.Data.EntityFramework.Sqlite <https://github.com/Platformus/Platformus/tree/master/src/Platformus.ECommerce.Data.EntityFramework.Sqlite>`_;
-* `Platformus.ECommerce.Data.EntityFramework.SqlServer <https://github.com/Platformus/Platformus/tree/master/src/Platformus.ECommerce.Data.EntityFramework.SqlServer>`_;
-* `Platformus.ECommerce.Frontend <https://github.com/Platformus/Platformus/tree/master/src/Platformus.ECommerce.Frontend>`_.
+* `Platformus.ECommerce <https://github.com/Platformus/Platformus/tree/master/src/Platformus.ECommerce>`_
+* `Platformus.ECommerce.Backend <https://github.com/Platformus/Platformus/tree/master/src/Platformus.ECommerce.Backend>`_
+* `Platformus.ECommerce.Data.Entities <https://github.com/Platformus/Platformus/tree/master/src/Platformus.ECommerce.Data.Entities>`_
+* `Platformus.ECommerce.Data.EntityFramework.PostgreSql <https://github.com/Platformus/Platformus/tree/master/src/Platformus.ECommerce.Data.EntityFramework.PostgreSql>`_
+* `Platformus.ECommerce.Data.EntityFramework.Sqlite <https://github.com/Platformus/Platformus/tree/master/src/Platformus.ECommerce.Data.EntityFramework.Sqlite>`_
+* `Platformus.ECommerce.Data.EntityFramework.SqlServer <https://github.com/Platformus/Platformus/tree/master/src/Platformus.ECommerce.Data.EntityFramework.SqlServer>`_
+* `Platformus.ECommerce.Frontend <https://github.com/Platformus/Platformus/tree/master/src/Platformus.ECommerce.Frontend>`_

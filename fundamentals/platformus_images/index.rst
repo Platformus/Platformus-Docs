@@ -8,4 +8,4 @@ Provides basic image processing (cropping and resizing).
 Packages
 --------
 
-* `Platformus.Images <https://github.com/Platformus/Platformus/tree/master/src/Platformus.Images>`_.
+* `Platformus.Images <https://github.com/Platformus/Platformus/tree/master/src/Platformus.Images>`_
