@@ -3,8 +3,17 @@
 Platformus.Website
 ==================
 
-Adds the object-oriented data model (classes, members, objects, properties, and relations to create, edit, and display content without writing code),
-menus, forms, and file manager. Completely enough for creating simple websites.
+This extension provides everything for building simple websites without (or almost without) programming.
+You can describe your custom content types and manage your data using the automatically generated admin panel UI.
+For example, you can have blog posts, tags, and comments with all the properties you need.
+
+Also, there are built-in features to work with menus and forms. You can create them in the backend and then display
+on frontend using the tag helpers.
+
+A basic file manager is also provided by Platformus.Website extension.
+
+Admin Panel Sections
+--------------------
 
 .. toctree::
    :titlesonly:

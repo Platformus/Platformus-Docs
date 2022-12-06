@@ -3,8 +3,11 @@
 Platformus.Core
 ===============
 
-Provides such basic things like users, credentials, roles, permissions, configurations, and cultures. Contains default extendable backend UI.
-Can be used as a base for the mobile application admin panels etc.
+This is the only required extension for any Platformus-based web application. It contains such basic things
+like reusable admin panel (or backend) UI, user access control based on permissions and roles, configuration, localization etc.
+
+Admin Panel Sections
+--------------------
 
 .. toctree::
    :titlesonly:

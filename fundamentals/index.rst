@@ -7,7 +7,7 @@ instead it implements such basic things like reusable admin panel (or backend) U
 configuration, localization etc.
 
 Depending on your needs and requirements you can either use other existing extensions to manage your content
-or write your own one(s). Anyway, the main purpose of the Platformus CMS is to save you from the writing routine code,
+or write your own one(s). Anyway, the main purpose of the Platformus CMS is to save you from writing routine code,
 to speed up development, and to provide you with convenient and standardized admin panel UI. Also,
 you can write and then reuse small typical extensions from project to project.
 
