@@ -14,12 +14,12 @@ Copy them into your solution folder.
 
 3. Add dependencies on the following projects to your web application project:
 
-* Platformus.Core.Data.EntityFramework.Sqlite;
-* Platformus.Images;
-* Platformus.Website.Backend;
-* Platformus.Website.Data.EntityFramework.Sqlite;
-* Platformus.Website.Frontend;
-* Platformus.WebApplication.
+* Platformus.Core.Data.EntityFramework.Sqlite
+* Platformus.Images
+* Platformus.Website.Backend
+* Platformus.Website.Data.EntityFramework.Sqlite
+* Platformus.Website.Frontend
+* Platformus.WebApplication
 
 4. Open your ``Startup`` class.
 

@@ -1,4 +1,6 @@
-﻿Forms
+﻿.. _forms:
+
+Forms
 =====
 
 Forms are used to get and process user input on the frontend. You can manage them (create, edit, and delete) from the backend

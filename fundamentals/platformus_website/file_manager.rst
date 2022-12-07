@@ -1,4 +1,6 @@
-﻿File Manager
+﻿.. _file-manager:
+
+File Manager
 ============
 
 File manager allows you to manage your files (upload and delete them) from the backend using the

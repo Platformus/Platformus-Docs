@@ -7,10 +7,10 @@ This extension provides everything for building simple websites without (or almo
 You can describe your custom content types and manage your data using the automatically generated admin panel UI.
 For example, you can have blog posts, tags, and comments with all the properties you need.
 
-Also, there are built-in features to work with menus and forms. You can create them in the backend and then display
-on frontend using the tag helpers.
+Also, there are built-in features to work with :ref:`menus <menus>` and :ref:`forms <forms>`.
+You can create them in the backend and then display on frontend using the tag helpers.
 
-A basic file manager is also provided by Platformus.Website extension.
+A basic :ref:`file manager <file-manager>` is also provided by Platformus.Website extension.
 
 Admin Panel Sections
 --------------------

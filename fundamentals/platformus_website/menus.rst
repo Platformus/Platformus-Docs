@@ -1,4 +1,6 @@
-﻿Menus
+﻿.. _menus:
+
+Menus
 =====
 
 Menus are used for navigation on the frontend. You can manage them (create, edit, and delete) from the backend

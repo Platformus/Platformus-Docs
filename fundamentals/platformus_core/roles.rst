@@ -3,13 +3,13 @@
 Roles
 =====
 
-Roles are used to group the permissions. For now, you can’t assign a permission to a user directly,
+Roles are used to group the permissions. You can’t assign a permission to a user directly,
 it is only possible to assign a role. You can manage them (create, edit, and delete) from the backend
 using the :guilabel:`Audience/Roles` section:
 
 .. image:: /images/fundamentals/audience/roles/1.png
 
-Each role has name, code, position, and other fields.
+Each role has name, code, position, and other fields:
 
 .. image:: /images/fundamentals/audience/roles/2.png
 

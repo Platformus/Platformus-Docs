@@ -19,7 +19,7 @@ This code complies with ISO 639-1. It is used, for example, as URL segment to de
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Specifies if this culture should be used as the default one on the frontend (it means that this culture will be used
-when the culture is not explicitly selected).
+when the culture is not explicitly provided).
 
 :guilabel:`Is backend default`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -30,7 +30,7 @@ You can see that there is the Neutral culture exists in the list. This culture i
 extension to store the culture-neutral string values using the `localizations
 <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Core.Data.Entities/Localization.cs#L12>`_.
 
-When you create your own extension or describe your data model using the classes and members using the :ref:`Platformus.Website <platformus-website>` one,
+When you create your own extension or describe your data model with classes and members using the :ref:`Platformus.Website <platformus-website>` one,
 you can specify whether the particular string property is localizable or not. If it is localizable, N editors will be displayed,
 one for each of the cultures. It looks like this:
 
@@ -46,9 +46,7 @@ For example: /en/some-page. It is done in this way to make it possible for the p
 with the different languages.  But if you are sure that your web application will always support the only one language,
 you can turn off this behavior using the :ref:`configurations <configurations>` and have shorter URLs.
 In this case, the default culture will be used to display the content (but you can change the way culture is selected
-for the requests).
-
-Of course, you can use different ways to determine request culture. For example, the ``Accept-Language`` header.
+for the requests; for example, the ``Accept-Language`` header can be used).
 
 There is the special
 `DefaultCultureManager <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Core/Services/Defaults/DefaultCultureManager.cs#L15>`_

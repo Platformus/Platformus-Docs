@@ -27,7 +27,7 @@ There are several use cases as examples.
 Mobile app API and admin panel
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can create an empty web application, add dependencies on the Platformus.Core extension packages,
+You can create an empty web application, add dependencies on the :ref:`Platformus.Core <platformus-core>` extension packages,
 and write a custom extension that will contain all the application-specific things:  entities, models, DTOs,
 controllers, admin panel sections etc.
 
@@ -42,14 +42,14 @@ Most of the websites’ content is changed from time to time, so if you are usin
 it could be not so important how many milliseconds it takes to retrieve from a database and display your data.
 Development speed is much more important in such cases.
 
-In such cases you can use Platformus.Website extension. It provides features to describe your content with classes
+In such cases you can use :ref:`Platformus.Website <platformus-website>` extension. It provides features to describe your content with classes
 and then create and use it as objects. This extension allows to avoid programming and, in many cases, trivial configuration
 and writing Razor views could be enough.
 
 Ecommerce
 ~~~~~~~~~
 
-Platformus CMS contains Platformus.Ecommerce extension which (as any other) can be used as the NuGet packages,
+Platformus CMS contains :ref:`Platformus.Ecommerce <platformus-ecommerce>` extension which (as any other) can be used as the NuGet packages,
 or as the source code. The second option could be useful when you need a very specific ecommerce app,
 so you can just use the source code as a simple barebone and implement features you need.
 

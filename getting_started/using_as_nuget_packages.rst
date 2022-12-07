@@ -16,12 +16,12 @@ and you can extend the built-in features and modify the default behaviors using 
 
 .. image:: /images/getting_started/use_as_nuget_packages/3.png
 
-* Platformus.Core.Data.EntityFramework.Sqlite;
-* Platformus.Images;
-* Platformus.Website.Backend;
-* Platformus.Website.Data.EntityFramework.Sqlite;
-* Platformus.Website.Frontend;
-* Platformus.WebApplication.
+* Platformus.Core.Data.EntityFramework.Sqlite
+* Platformus.Images
+* Platformus.Website.Backend
+* Platformus.Website.Data.EntityFramework.Sqlite
+* Platformus.Website.Frontend
+* Platformus.WebApplication
 
 Or you can add them manually by editing .csproj file of your web application project:
 

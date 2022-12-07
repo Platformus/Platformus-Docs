@@ -23,7 +23,7 @@ This information is stored using the
 objects. Each user can have different credentials, and each credential has its
 `type <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Core.Data.Entities/CredentialType.cs#L14>`_
 (it can be email and password, Facebook account, Microsoft account and so on). When user signs in,
-Platformus checks whether there is a credential with the given type, identifier, and secret exists. If the credential is found,
+Platformus checks if there is a credential with the given type, identifier, and secret exists. If the credential is found,
 corresponding user is signed in.
 
 The credential list looks like this:
@@ -43,6 +43,6 @@ As a developer, you can create your own credential types which depend on the sig
 ~~~~~~~~~~~~~~~~~~
 
 ``Secret`` is optional and can be used to store any additional information. For example, it stores passwords (as hashes)
-for the email and password credential type. If you need to change the password, just type it in this field.
+for the email and password credential type. If you need to change the password, just type it into this field.
 Don’t forget to set the :guilabel:`Apply PBKDF2 hashing to secret` checkbox to apply hashing,
 otherwise your password will be saved as plain text and signing in won’t work (as it compares hashes).
