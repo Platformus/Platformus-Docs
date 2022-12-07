@@ -8,11 +8,21 @@ using the :guilabel:`Content/Menus` section:
 
 .. image:: /images/fundamentals/content/menus/1.png
 
-Each menu item has localized name, URL, and position. Position might be used to sort the menu items in the correct order:
+Each menu item has localized name, URL, and position:
 
 .. image:: /images/fundamentals/content/menus/2.png
 
-After menu is created, you can display it on the frontend using the built-in ``MenuViewComponent`` view component like this
+:guilabel:`URL`
+~~~~~~~~~~~~~~~~~~~~
+
+``URL`` is where user is redirected when clicks the menu item.
+
+:guilabel:`Position`
+~~~~~~~~~~~~~~~~~~~~
+
+``Position`` might be used to sort the menu items in the correct order.
+
+Once menu is created, you can display it on the frontend using the built-in ``MenuViewComponent`` view component like this
 (the menu code is passed as the parameter to identify the menu we want to display):
 
 .. code-block:: html

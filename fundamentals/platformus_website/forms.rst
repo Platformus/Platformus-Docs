@@ -8,11 +8,25 @@ using the :guilabel:`Content/Forms` section:
 
 .. image:: /images/fundamentals/content/forms/1.png
 
-Each form has code, localized name and submit button title. The :guilabel:`Produce completed forms` checkbox allows to specify
-whether you want completed forms to be created each time user fills the form.
+Each form has code, localized name, submit button title, and other fields:
+
+.. image:: /images/fundamentals/content/forms/2.png
+
+:guilabel:`Code`
+~~~~~~~~~~~~~~~~
+
+``Code`` might be used to get forms from code (see examples below).
+
+:guilabel:`Produce completed forms`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The :guilabel:`Produce completed forms` checkbox allows to specify if you want completed forms to be created each time user fills the form.
 You can review completed forms (user input) from the backend any time if they are created.
 
-:guilabel:`Form handler C# class name` field allows you to specify the implementation of the
+:guilabel:`Form handler C# class name`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Defines the implementation of the
 `IFormHandler <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website/FormHandlers/IFormHandler.cs#L13>`_
 interface that will handle the user input for this form. There is the only one built-in implementation of this interface:
 the `EmailFormHandler <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website.Frontend/FormHandlers/EmailFormHandler.cs#L19>`_
@@ -23,16 +37,29 @@ Each form handler can have different (specified by the developer) parameters, wh
 Parameter editors might be created by the developer too. (The built-in form handler has two parameters: :guilabel:`Recipient emails`
 and :guilabel:`Redirect URL`.)
 
-.. image:: /images/fundamentals/content/forms/2.png
-
 Forms consist of fields. There are different types of fields (and you can add your own ones). Each field has type,
-localized name, and position. Position might be used to sort the fields in the correct order:
+localized name, position, and other fields:
 
 .. image:: /images/fundamentals/content/forms/3.png
 
-Also, fields might have validation parameters and a predefined set of options.
+:guilabel:`Is required`
+~~~~~~~~~~~~~~~~~~~~
 
-After form is created, you can display it on the frontend using the built-in ``FormViewComponent`` view component like this
+Prevents user from submitting the form until this field contains value.
+
+:guilabel:`Max length`
+~~~~~~~~~~~~~~~~~~~~
+
+Prevents user from specifying a longer text value than allowed.
+
+:guilabel:`Position`
+~~~~~~~~~~~~~~~~~~~~
+
+``Position`` might be used to sort the fields in the correct order within the form.
+
+The fields of the type Drop down list also have user-defined options.
+
+Once form is created, you can display it on the frontend using the built-in ``FormViewComponent`` view component like this
 (the form code is passed as the parameter to identify the form we want to display):
 
 .. code-block:: html
