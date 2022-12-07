@@ -1,4 +1,4 @@
-﻿.. _platformus.images:
+﻿.. _platformus-images:
 
 Platformus.Images
 ==================

@@ -1,4 +1,4 @@
-﻿.. _platformus.core:
+﻿.. _platformus-core:
 
 Platformus.Core
 ===============

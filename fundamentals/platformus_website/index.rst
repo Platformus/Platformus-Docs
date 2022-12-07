@@ -1,4 +1,4 @@
-﻿.. _platformus.website:
+﻿.. _platformus-website:
 
 Platformus.Website
 ==================
@@ -22,8 +22,6 @@ Admin Panel Sections
    menus
    forms
    file_manager
-   data_types
-   data_type_parameters
    classes
    tabs
    members

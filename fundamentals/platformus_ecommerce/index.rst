@@ -1,4 +1,4 @@
-﻿.. _platformus.ecommerce:
+﻿.. _platformus-ecommerce:
 
 Platformus.ECommerce
 ====================
