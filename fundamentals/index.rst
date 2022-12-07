@@ -2,7 +2,7 @@
 ============
 
 Platformus CMS is modular and extendable, so its behavior is very dependent on the set of the extensions.
-The main and the only required extension is the Platformus.Core. It doesn’t provide any content management,
+The main and the only required extension is the :ref:`Platformus.Core <platformus-core>`. It doesn’t provide any content management,
 instead it implements such basic things like reusable admin panel (or backend) UI, user access control,
 configuration, localization etc.
 

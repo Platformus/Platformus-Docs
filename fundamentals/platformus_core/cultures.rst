@@ -6,12 +6,25 @@ You can manage them (create, edit, and delete) from the backend using the :guila
 
 .. image:: /images/fundamentals/administration/cultures/1.png
 
-Each culture has two-letter language code (id, according to ISO 639-1) and name.
-The :guilabel:`Is frontend default` checkbox allows to specify if this culture should be used as the default one on the frontend
-(it means that this culture will be used when the culture is not explicitly selected).
-And the :guilabel:`Is backend default` specifies if this cultured should be used as the backend (admin panel) one.
+Each culture has two-letter language code, name, and other fields:
 
 .. image:: /images/fundamentals/administration/cultures/2.png
+
+:guilabel:`Two-letter language code`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This code complies with ISO 639-1. It is used, for example, as URL segment to determine request's language (see below).
+
+:guilabel:`Is frontend default`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Specifies if this culture should be used as the default one on the frontend (it means that this culture will be used
+when the culture is not explicitly selected).
+
+:guilabel:`Is backend default`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Specifies if this cultured should be used as the backend (admin panel) one.
 
 You can see that there is the Neutral culture exists in the list. This culture is used by the :ref:`Platformus.Website <platformus-website>`
 extension to store the culture-neutral string values using the `localizations
@@ -25,7 +38,7 @@ one for each of the cultures. It looks like this:
 
 When your string property is not localizable, the only one editor will be displayed, and the property value will be saved
 either using the localization with neutral culture (in case the :ref:`Platformus.Website <platformus-website>` extension is used)
-or whatever you want it to be saved.
+or in the way you want it to be saved.
 
 When using the :ref:`Platformus.Website <platformus-website>` extension, by default a short two-letter language code segment
 is used in the URL on the frontend to specify which culture should be used for the request.
@@ -34,6 +47,8 @@ with the different languages.  But if you are sure that your web application wil
 you can turn off this behavior using the :ref:`configurations <configurations>` and have shorter URLs.
 In this case, the default culture will be used to display the content (but you can change the way culture is selected
 for the requests).
+
+Of course, you can use different ways to determine request culture. For example, the ``Accept-Language`` header.
 
 There is the special
 `DefaultCultureManager <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Core/Services/Defaults/DefaultCultureManager.cs#L15>`_

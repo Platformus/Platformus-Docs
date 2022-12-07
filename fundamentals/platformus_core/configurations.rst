@@ -13,13 +13,29 @@ Each configuration has code and name:
 
 .. image:: /images/fundamentals/administration/configurations/2.png
 
-Code is used to get the configuration from code.
+:guilabel:`Code`
+~~~~~~~~~~~~~~~~
+
+``Code`` might be used to get configuration from code (see examples below).
 
 Configurations consist of variables. Each variable has code, name, value, and position:
 
 .. image:: /images/fundamentals/administration/configurations/3.png
 
-The same as for configurations, code is used to get the variable from code.
+:guilabel:`Code`
+~~~~~~~~~~~~~~~~
+
+The same as for configurations, ``Code`` is used to get variable from code.
+
+:guilabel:`Value`
+~~~~~~~~~~~~~~~~~~~~
+
+``Value`` contains the variable's value.
+
+:guilabel:`Position`
+~~~~~~~~~~~~~~~~~~~~
+
+``Position`` might be used to sort the variables in the correct order.
 
 There is the special
 `DefaultConfigurationManager <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Core/Services/Defaults/DefaultConfigurationManager.cs#L12>`_

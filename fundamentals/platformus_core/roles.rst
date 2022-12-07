@@ -9,9 +9,19 @@ using the :guilabel:`Audience/Roles` section:
 
 .. image:: /images/fundamentals/audience/roles/1.png
 
-Each role has name, code, and position. Code is used to check roles from code, while position might be used to sort the roles in the correct order:
+Each role has name, code, position, and other fields.
 
 .. image:: /images/fundamentals/audience/roles/2.png
+
+:guilabel:`General/Code`
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+``Code`` might be used to check roles from code.
+
+:guilabel:`General/Position`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+``Position`` might be used to sort the roles in the correct order.
 
 Also, on the :guilabel:`Permissions` tab you can assign the permissions to a role:
 

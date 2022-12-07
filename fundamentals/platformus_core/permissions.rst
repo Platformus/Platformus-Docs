@@ -8,9 +8,19 @@ from the backend using the :guilabel:`Audience/Permissions` section:
 
 .. image:: /images/fundamentals/audience/permissions/1.png
 
-Each permission has name, code, and position. Code is used to check permissions from code, while position might be used to sort the permissions in the correct order:
+Each permission has name, code, and position:
 
 .. image:: /images/fundamentals/audience/permissions/2.png
+
+:guilabel:`Code`
+~~~~~~~~~~~~~~~~
+
+``Code`` might be used to check permissions from code (see examples below).
+
+:guilabel:`Position`
+~~~~~~~~~~~~~~~~~~~~
+
+``Position`` might be used to sort the permissions in the correct order.
 
 Once you created a permission, you can assign it to a :ref:`role <roles>` (and then to a :ref:`user <users>`).
 While signing in, all the user roles and all the permissions from that roles are attached to the user as the claims.
