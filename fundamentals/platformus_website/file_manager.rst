@@ -8,7 +8,7 @@ File manager allows you to manage your files (upload and delete them) from the b
 
 .. image:: /images/fundamentals/content/file_manager/1.png
 
-After a file is uploaded you can use it in different ways. You can copy a link to the file and paste it somewhere.
+Once a file is uploaded you can use it in different ways. You can copy a link to the file and paste it somewhere.
 If it is an image, you can paste it in the HTML editor using the file selector (click the :guilabel:`Insert/edit image`
 button and then the :guilabel:`Browse` one):
 

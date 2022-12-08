@@ -1,4 +1,6 @@
-﻿Objects
+﻿.. _objects:
+
+Objects
 =======
 
 Object is the central part of the default Platformus CMS data model. It is an elementary piece of the information.

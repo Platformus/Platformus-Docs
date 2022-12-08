@@ -37,19 +37,22 @@ Position is used to sort the members in the lists.
 :guilabel:`Property/Property data type`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Member can be a property or a relation. If you specify the property :ref:`data type <data-types>`, member will be considered as a property.
-Property data type allows to specify how to store the object property value (and which raw storage data type is used for that),
-how to display and edit it in the backend.
+Member can be a property or a relation. If you specify the property data type, member will be considered as a property.
+Property data type allows to specify how to store the object property value (and which
+`raw storage data type <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website.Data.Entities/StorageDataTypes.cs#L6>`_
+is used for that), how to display and edit it in the backend.
 
-If a property data type is selected, :ref:`data type parameters <data-type-parameters>` will be also displayed.
+If a property data type is selected, data type parameters will be also displayed. Each data type can have unique parameters.
+For example, it could be maximum text length for the text or width and height for the image.
 
 .. image:: /images/fundamentals/development/members/4.png
 
 :guilabel:`Relation/Relation class`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you specify the relation :ref:`classes <classes>`, member will be considered as a relation. Relation selector will be displayed as the editor.
-Also, if any relation class is selected, additional fields will be displayed.
+If you specify the relation :ref:`class <classes>`, member will be considered as a relation. Relation selector will be displayed as the editor.
+For example, user will be able to select a category for a blog post or assign tags to it. Also, if any relation class is selected,
+additional fields will be displayed.
 
 :guilabel:`Is relation single parent`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

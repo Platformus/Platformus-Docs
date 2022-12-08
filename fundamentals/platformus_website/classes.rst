@@ -3,7 +3,7 @@
 Classes
 =======
 
-Classes are used to describe the objects. Using the members, they describe which properties should the objects have,
+Classes are used to describe the :ref:`objects <objects>`. Using the :ref:`members <members>`, they describe which properties should the objects have,
 how these property values should be stored and edited in the backend, and how the objects are related to each other.
 You can manage them (create, edit, and delete) from the backend using the :guilabel:`Development/Classes` section:
 

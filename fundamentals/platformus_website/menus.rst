@@ -20,7 +20,7 @@ Each menu item has localized name, URL, and position:
 :guilabel:`Position`
 ~~~~~~~~~~~~~~~~~~~~
 
-``Position`` might be used to sort the menu items in the correct order.
+``Position`` might be used to sort the menu items in the correct order within the menu.
 
 Once menu is created, you can display it on the frontend using the built-in ``MenuViewComponent`` view component like this
 (the menu code is passed as the parameter to identify the menu we want to display):
