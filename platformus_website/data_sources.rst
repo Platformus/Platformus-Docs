@@ -8,11 +8,11 @@ Each endpoint might use data sources to be able to build a model. Data sources u
 to provide data to the endpoints. You can manage them (create, edit, and delete) from the backend using the
 :guilabel:`Data sources` section of the :ref:`endpoints <endpoints>`:
 
-.. image:: /images/fundamentals/development/data_sources/1.png
+.. image:: /images/platformus_website/data_sources/1.png
 
 Each data source has code and data provider C# class name:
 
-.. image:: /images/fundamentals/development/data_sources/2.png
+.. image:: /images/platformus_website/data_sources/2.png
 
 :guilabel:`Code`
 ~~~~~~~~~~~~~~~~

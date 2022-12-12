@@ -6,11 +6,11 @@ Members
 Members are used to describe which properties and relations should the objects of a given class have.
 You can manage them (create, edit, and delete) from the backend using the :guilabel:`Members` section of the :ref:`classes <classes>`:
 
-.. image:: /images/fundamentals/development/members/1.png
+.. image:: /images/platformus_website/members/1.png
 
 Each member has tab, code, name, and other fields:
 
-.. image:: /images/fundamentals/development/members/2.png
+.. image:: /images/platformus_website/members/2.png
 
 :guilabel:`General/Tab`
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -32,7 +32,7 @@ Name is used to identify the members in the backend.
 
 Position is used to sort the members in the lists.
 
-.. image:: /images/fundamentals/development/members/3.png
+.. image:: /images/platformus_website/members/3.png
 
 :guilabel:`Property/Property data type`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -45,7 +45,7 @@ is used for that), how to display and edit it in the backend.
 If a property data type is selected, data type parameters will be also displayed. Each data type can have unique parameters.
 For example, it could be maximum text length for the text or width and height for the image.
 
-.. image:: /images/fundamentals/development/members/4.png
+.. image:: /images/platformus_website/members/4.png
 
 :guilabel:`Relation/Relation class`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

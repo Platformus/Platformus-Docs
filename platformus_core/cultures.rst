@@ -4,11 +4,11 @@
 Cultures are used to specify which languages and data formats your web application supports.
 You can manage them (create, edit, and delete) from the backend using the :guilabel:`Administration/Cultures` section:
 
-.. image:: /images/fundamentals/administration/cultures/1.png
+.. image:: /images/platformus_core/cultures/1.png
 
 Each culture has two-letter language code, name, and other fields:
 
-.. image:: /images/fundamentals/administration/cultures/2.png
+.. image:: /images/platformus_core/cultures/2.png
 
 :guilabel:`Two-letter language code`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -34,7 +34,7 @@ When you create your own extension or describe your data model with classes and 
 you can specify whether the particular string property is localizable or not. If it is localizable, N editors will be displayed,
 one for each of the cultures. It looks like this:
 
-.. image:: /images/fundamentals/administration/cultures/3.png
+.. image:: /images/platformus_core/cultures/3.png
 
 When your string property is not localizable, the only one editor will be displayed, and the property value will be saved
 either using the localization with neutral culture (in case the :ref:`Platformus.Website <platformus-website>` extension is used)

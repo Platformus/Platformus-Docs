@@ -6,11 +6,11 @@ Forms
 Forms are used to get and process user input on the frontend. You can manage them (create, edit, and delete) from the backend
 using the :guilabel:`Content/Forms` section:
 
-.. image:: /images/fundamentals/content/forms/1.png
+.. image:: /images/platformus_website/forms/1.png
 
 Each form has code, localized name, submit button title, and other fields:
 
-.. image:: /images/fundamentals/content/forms/2.png
+.. image:: /images/platformus_website/forms/2.png
 
 :guilabel:`Code`
 ~~~~~~~~~~~~~~~~
@@ -40,7 +40,7 @@ and :guilabel:`Redirect URL`.)
 Forms consist of fields. There are different types of fields (and you can add your own ones). Each field has type,
 localized name, position, and other fields:
 
-.. image:: /images/fundamentals/content/forms/3.png
+.. image:: /images/platformus_website/forms/3.png
 
 :guilabel:`Is required`
 ~~~~~~~~~~~~~~~~~~~~
@@ -78,7 +78,7 @@ As you can see, an additional CSS class might be applied using the corresponding
 
 The result can look something like this:
 
-.. image:: /images/fundamentals/content/forms/4.png
+.. image:: /images/platformus_website/forms/4.png
 
 Forms are displayed using the built-in views
 (`_Form <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website.Frontend/Views/Shared/_Form.cshtml>`_ and

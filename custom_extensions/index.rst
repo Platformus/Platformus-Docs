@@ -1,5 +1,5 @@
-﻿Extensions Development
-======================
+﻿Custom Extensions
+=================
 
 Platformus is based on the `ExtCore framework <https://extcore.net/>`_ and `Magicalizer <https://magicalizer.net/>`_,
 so it is modular and extendable by default. You can follow the `ExtCore documentation <https://docs.extcore.net/>`_

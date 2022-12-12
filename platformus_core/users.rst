@@ -7,15 +7,15 @@ Users (as well as :ref:`permissions <permissions>` and :ref:`roles <roles>`)
 are used to control access to a web application resources.
 You can manage them (create, edit, and delete) from the backend using the :guilabel:`Audience/Users` section:
 
-.. image:: /images/fundamentals/audience/users/1.png
+.. image:: /images/platformus_core/users/1.png
 
 Each user has name:
 
-.. image:: /images/fundamentals/audience/users/2.png
+.. image:: /images/platformus_core/users/2.png
 
 Also, on the :guilabel:`Roles` tab you can assign the roles to a user:
 
-.. image:: /images/fundamentals/audience/users/3.png
+.. image:: /images/platformus_core/users/3.png
 
 As user itself only has a name, he doesn’t store any information about how he signs in.
 This information is stored using the
@@ -28,11 +28,11 @@ corresponding user is signed in.
 
 The credential list looks like this:
 
-.. image:: /images/fundamentals/audience/users/4.png
+.. image:: /images/platformus_core/users/4.png
 
 Each credential has type, identifier, and secret:
 
-.. image:: /images/fundamentals/audience/users/5.png
+.. image:: /images/platformus_core/users/5.png
 
 :guilabel:`Credential type`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~

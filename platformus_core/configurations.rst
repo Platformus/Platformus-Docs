@@ -7,11 +7,11 @@ Configurations and variables are used to provide user-defined configuration para
 (while developer-defined ones can be provided using the appsettings.json file).
 You can manage them (create, edit, and delete) from the backend using the :guilabel:`Administration/Configurations` section:
 
-.. image:: /images/fundamentals/administration/configurations/1.png
+.. image:: /images/platformus_core/configurations/1.png
 
 Each configuration has code and name:
 
-.. image:: /images/fundamentals/administration/configurations/2.png
+.. image:: /images/platformus_core/configurations/2.png
 
 :guilabel:`Code`
 ~~~~~~~~~~~~~~~~
@@ -20,7 +20,7 @@ Each configuration has code and name:
 
 Configurations consist of variables. Each variable has code, name, value, and position:
 
-.. image:: /images/fundamentals/administration/configurations/3.png
+.. image:: /images/platformus_core/configurations/3.png
 
 :guilabel:`Code`
 ~~~~~~~~~~~~~~~~

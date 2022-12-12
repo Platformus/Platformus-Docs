@@ -21,11 +21,11 @@ Wide range of the tag helpers makes it simpler and faster.
 Platformus CMS is modular and extendable, it can run on different environments (Linux, Mac, Windows, and clouds)
 and supports different database types (PostgreSQL, SQLite, SQL Server).
 
-.. image:: /images/introduction/1.png
+.. image:: /images/1.png
 
-.. image:: /images/introduction/2.png
+.. image:: /images/2.png
 
-.. image:: /images/introduction/3.png
+.. image:: /images/3.png
 
 Contents
 --------
@@ -35,4 +35,8 @@ Contents
 
    getting_started/index
    fundamentals/index
-   advanced/index
+   platformus_core/index
+   platformus_website/index
+   platformus_ecommerce/index
+   platformus_images/index
+   custom_extensions/index

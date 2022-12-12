@@ -27,6 +27,7 @@ Admin Panel Sections
    members
    endpoints
    data_sources
+   advanced/index
    
 Packages
 --------

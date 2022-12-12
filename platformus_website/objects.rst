@@ -7,7 +7,7 @@ Object is the central part of the default Platformus CMS data model. It is an el
 It can be your blog post, comment, or tag. Objects are described by :ref:`classes <classes>` and :ref:`members <members>` and consist of properties and relations.
 You can manage them (create, edit, and delete) from the backend using the :guilabel:`Content/Objects` section:
 
-.. image:: /images/fundamentals/content/objects/1.png
+.. image:: /images/platformus_website/objects/1.png
 
 The :guilabel:`Content/Objects` section has subsections that correspond to classes. These subsections are grouped using the parent classes.
 Classes without parents go under the Other group.
@@ -22,13 +22,13 @@ String properties can be localizable and non-localizable.
 
 The object edit page consist of client-side editors grouped by :ref:`tabs <tabs>`. A typical page can look like this:
 
-.. image:: /images/fundamentals/content/objects/2.png
+.. image:: /images/platformus_website/objects/2.png
 
 The property editors may look and behave absolutely different. This is the property editor for the
 ``Image`` data type looks like:
 
-.. image:: /images/fundamentals/content/objects/3.png
+.. image:: /images/platformus_website/objects/3.png
 
 And this is the one for the ``Date`` data type:
 
-.. image:: /images/fundamentals/content/objects/4.png
+.. image:: /images/platformus_website/objects/4.png

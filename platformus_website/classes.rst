@@ -7,11 +7,11 @@ Classes are used to describe the :ref:`objects <objects>`. Using the :ref:`membe
 how these property values should be stored and edited in the backend, and how the objects are related to each other.
 You can manage them (create, edit, and delete) from the backend using the :guilabel:`Development/Classes` section:
 
-.. image:: /images/fundamentals/development/classes/1.png
+.. image:: /images/platformus_website/classes/1.png
 
 Each class has optional parent class, code, name, and other fields:
 
-.. image:: /images/fundamentals/development/classes/2.png
+.. image:: /images/platformus_website/classes/2.png
 
 :guilabel:`Parent class (abstract only)`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

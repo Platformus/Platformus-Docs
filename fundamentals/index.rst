@@ -14,13 +14,10 @@ you can write and then reuse small typical extensions from project to project.
 Standard Extensions
 -------------------
 
-.. toctree::
-   :titlesonly:
-
-   platformus_core/index
-   platformus_website/index
-   platformus_ecommerce/index
-   platformus_images/index
+* :ref:`Platformus.Core <platformus-core>`
+* :ref:`Platformus.Website <platformus-website>`
+* :ref:`Platformus.Ecommerce <platformus-ecommerce>`
+* :ref:`Platformus.Images <platformus-images>`
 
 There are several use cases as examples.
 

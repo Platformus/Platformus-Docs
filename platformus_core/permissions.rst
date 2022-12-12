@@ -6,11 +6,11 @@ Permissions
 Permissions are used to control user access to a web application resources. You can manage them (create, edit, and delete)
 from the backend using the :guilabel:`Audience/Permissions` section:
 
-.. image:: /images/fundamentals/audience/permissions/1.png
+.. image:: /images/platformus_core/permissions/1.png
 
 Each permission has name, code, and position:
 
-.. image:: /images/fundamentals/audience/permissions/2.png
+.. image:: /images/platformus_core/permissions/2.png
 
 :guilabel:`Code`
 ~~~~~~~~~~~~~~~~

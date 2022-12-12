@@ -6,11 +6,11 @@ Menus
 Menus are used for navigation on the frontend. You can manage them (create, edit, and delete) from the backend
 using the :guilabel:`Content/Menus` section:
 
-.. image:: /images/fundamentals/content/menus/1.png
+.. image:: /images/platformus_website/menus/1.png
 
 Each menu item has localized name, URL, and position:
 
-.. image:: /images/fundamentals/content/menus/2.png
+.. image:: /images/platformus_website/menus/2.png
 
 :guilabel:`URL`
 ~~~~~~~~~~~~~~~~~~~~
@@ -41,7 +41,7 @@ As you can see, an additional CSS class might be applied using the corresponding
 
 The result can look something like this (note that the current menu item is highlighted):
 
-.. image:: /images/fundamentals/content/menus/3.png
+.. image:: /images/platformus_website/menus/3.png
 
 Menus are displayed using the built-in views
 (`_Menu <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website.Frontend/Views/Shared/_Menu.cshtml>`_ and

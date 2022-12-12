@@ -4,14 +4,14 @@ Endpoints
 =========
 
 Endpoints are used to handle the requests to a web application (it doesn’t mean that you can’t use the default ASP.NET routing:
-it will continue working and is executed before any endpoint.). You can manage them (create, edit, and delete) from the backend
+it will continue working and is executed before any endpoint). You can manage them (create, edit, and delete) from the backend
 using the :guilabel:`Development/Endpoints` section:
 
-.. image:: /images/fundamentals/development/endpoints/1.png
+.. image:: /images/platformus_website/endpoints/1.png
 
 Each endpoint has name, URL template, position, and other fields:
 
-.. image:: /images/fundamentals/development/endpoints/2.png
+.. image:: /images/platformus_website/endpoints/2.png
 
 :guilabel:`General/Name`
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -31,7 +31,7 @@ interface to select the endpoint which should process current request (see below
 Position is important, because the `endpoint resolver <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website.Frontend/Services/Defaults/DefaultEndpointResolver.cs#L16>`_
 checks the endpoints one by one, and it will return the first matching endpoint from the list, sorted by position.
 
-.. image:: /images/fundamentals/development/endpoints/3.png
+.. image:: /images/platformus_website/endpoints/3.png
 
 :guilabel:`Access/Disallow anonymous`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -44,7 +44,7 @@ Once the checkbox is checked, the :guilabel:`Required permissions` list will app
 
 This URL will be used to redirect user if he must be authenticated or if a required permission is missing.
 
-.. image:: /images/fundamentals/development/endpoints/4.png
+.. image:: /images/platformus_website/endpoints/4.png
 
 :guilabel:`Request processing/Request processor C# class name`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -60,7 +60,7 @@ one. It returns views (you can specify the view name).
 If we talk about the views, endpoint should provide some information that a view needs using the view model.
 Endpoint creates and initializes a view model using the data sources. Each endpoint can have different :ref:`data sources <data-sources>`.
 
-.. image:: /images/fundamentals/development/endpoints/5.png
+.. image:: /images/platformus_website/endpoints/5.png
 
 :guilabel:`Response caching/Response cache C# class name`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
