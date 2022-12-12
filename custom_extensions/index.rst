@@ -1,4 +1,6 @@
-﻿Custom Extensions
+﻿.. _custom-extension:
+
+Custom Extensions
 =================
 
 Platformus is based on the `ExtCore framework <https://extcore.net/>`_ and `Magicalizer <https://magicalizer.net/>`_,
@@ -9,7 +11,7 @@ While the `Platformus.Website <https://platformus.readthedocs.io/en/latest/exten
 extension contains some frontend requests processing (the `WebsiteMiddleware
 <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website.Frontend/Middleware/WebsiteMiddleware.cs#L15>`_
 can process requests using the `IEndpoint <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website/Endpoints/IEndpoint.cs#L12>`_
-interface implementations), your extensions still may contain standard things like controllers or pages. 
+interface implementations), your extensions still may contain standard things like controllers or pages.
 
 Basic backend UI (HTML, styles, scripts, tag helpers etc.) is defined inside the
 `Platformus.Core.Backend <https://github.com/Platformus/Platformus/tree/master/src/Platformus.Core.Backend>`_

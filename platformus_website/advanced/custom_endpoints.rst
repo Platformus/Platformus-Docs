@@ -1,4 +1,4 @@
-﻿.. _custom-request-processors:
+﻿.. _custom-endpoints:
 
 Custom Endpoints
 ================
@@ -43,15 +43,15 @@ which actually defines which C# class is used as the real endpoint.
 
 Now, when our endpoint class is added, navigate to the backend’s :guilabel:`Development/Endpoints` section and create one more endpoint:
 
-.. image:: /images/advanced/custom_endpoints/1.png
+.. image:: /images/platformus_website/advanced/custom_endpoints/1.png
 
 Please note, that our new endpoint C# class is automatically resolved and added to the drop down list. Click the :guilabel:`Save` button. Endpoint is created:
 
-.. image:: /images/advanced/custom_endpoints/2.png
+.. image:: /images/platformus_website/advanced/custom_endpoints/2.png
 
 Now navigate to /en/api and our new endpoint will process the request:
 
-.. image:: /images/advanced/custom_endpoints/3.png
+.. image:: /images/platformus_website/advanced/custom_endpoints/3.png
 
 Good. Everything works as expected.
 
@@ -87,7 +87,7 @@ It simply contains some text description of the endpoint which will be shown to 
 
 Now edit our endpoint in the backend:
 
-.. image:: /images/advanced/custom_endpoints/4.png
+.. image:: /images/platformus_website/advanced/custom_endpoints/4.png
 
 Now the endpoint group with the parameter is displayed. Let’s see how to get the selected value from the code:
 
@@ -104,7 +104,7 @@ Now the endpoint group with the parameter is displayed. Let’s see how to get t
 
 If you change the data format in the backend, the endpoint output will also be changed:
 
-.. image:: /images/advanced/custom_endpoints/5.png
+.. image:: /images/platformus_website/advanced/custom_endpoints/5.png
 
 URL arguments
 -------------
