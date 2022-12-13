@@ -3,11 +3,13 @@
 Endpoints
 =========
 
-Endpoints are used to handle the requests to a web application (it doesn’t mean that you can’t use the default ASP.NET routing:
-it will continue working and is executed before any endpoint). You can manage them (create, edit, and delete) from the backend
+The purpose of the endpoints is to take some data provided by the :ref:`data sources <data-sources>`, represent it in some way (HTML, JSON, XML etc.),
+and return as the response. They also handle access control and caching. You can manage them (create, edit, and delete) from the backend
 using the :guilabel:`Development/Endpoints` section:
 
 .. image:: /images/platformus_website/endpoints/1.png
+
+Please note, that the default ASP.NET routing still works and it is executed before any endpoint.
 
 Each endpoint has name, URL template, position, and other fields:
 
@@ -51,14 +53,15 @@ This URL will be used to redirect user if he must be authenticated or if a requi
 
 It allows you to specify, which C# class (implementation of the
 `IRequestProcessor <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website/RequestProcessors/IRequestProcessor.cs#L15>`_
-interface) will process the requests. It is very important, because you can write your own implementations of this interface
-and process the requests in any way you want. You can return views, JSON, files, plain text, redirects, or any other content.
+interface) will process the requests (convert request data and data provided by the data sources to the response). It is very important,
+because you can write your own implementations of this interface. You can return HTML (using or not using views), JSON, files, plain text, redirects, or any other content.
 There is the only one built-in request processor: the
 `DefaultRequestProcessor <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website.Frontend/RequestProcessors/DefaultRequestProcessor.cs#L17>`_
-one. It returns views (you can specify the view name).
+one. It returns views as the ASP.NET controllers (you can specify the view name).
 
-If we talk about the views, endpoint should provide some information that a view needs using the view model.
-Endpoint creates and initializes a view model using the data sources. Each endpoint can have different :ref:`data sources <data-sources>`.
+Please note that the endpoints process requests using the request processors, they do not (and should not) provide data for the responses.
+In other words, they take prepared data and represent it in some way (HTML, JSON etc.). Data is provided to the endpoints by :ref:`data sources <data-sources>`.
+Each endpoint can have different data sources at the same time.
 
 .. image:: /images/platformus_website/endpoints/5.png
 
