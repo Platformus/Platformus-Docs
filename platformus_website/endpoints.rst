@@ -57,7 +57,7 @@ interface) will process the requests (convert request data and data provided by 
 because you can write your own implementations of this interface. You can return HTML (using or not using views), JSON, files, plain text, redirects, or any other content.
 There is the only one built-in request processor: the
 `DefaultRequestProcessor <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website.Frontend/RequestProcessors/DefaultRequestProcessor.cs#L17>`_
-one. It returns views as the ASP.NET controllers (you can specify the view name).
+one. It returns views the same way as ASP.NET controllers do (you can specify the view name using the parameter).
 
 Please note that the endpoints process requests using the request processors, they do not (and should not) provide data for the responses.
 In other words, they take prepared data and represent it in some way (HTML, JSON etc.). Data is provided to the endpoints by :ref:`data sources <data-sources>`.

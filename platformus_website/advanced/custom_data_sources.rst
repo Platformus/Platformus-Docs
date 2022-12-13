@@ -33,7 +33,7 @@ and create one more data source:
 
 .. image:: /images/platformus_website/advanced/custom_data_sources/1.png
 
-Please note, that our new data source C# class is automatically resolved and added to the drop down list. Click the :guilabel:`Save` button. Data source is created:
+Please note, that our new data provider C# class is automatically resolved and added to the drop down list. Click the :guilabel:`Save` button. Data source is created:
 
 .. image:: /images/platformus_website/advanced/custom_data_sources/2.png
 
