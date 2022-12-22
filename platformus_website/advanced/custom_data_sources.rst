@@ -13,9 +13,9 @@ Create the ``HardcodedValuesDataProvider`` class inside the main web application
 .. code-block:: cs
     :emphasize-lines: 13
 
-    public class HardcodedValuesDataProvider : IDataProvider
+    public class MyDataProvider : IDataProvider
     {
-      public string Description => "The hardcoded values provider.";
+      public string Description => "Provides the hardcoded values.";
 
       public IEnumerable<ParameterGroup> ParameterGroups => new ParameterGroup[] { };
 
