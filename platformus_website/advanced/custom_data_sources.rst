@@ -8,10 +8,10 @@ It is a regular C# class that implements the `IDataProvider <https://github.com/
 interface. There are several `built-in data providers <https://github.com/Platformus/Platformus/tree/master/src/Platformus.Website.Frontend/DataProviders>`_,
 but all of them work with the :ref:`objects <objects>`. Let’s create a custom one that will just provide a hardcoded text.
 
-Create the ``HardcodedValuesDataProvider`` class inside the main web application project and implement the ``IDataProvider`` interface:
+Create the ``MyDataProvider`` class inside the main web application project and implement the ``IDataProvider`` interface:
 
 .. code-block:: cs
-    :emphasize-lines: 13
+    :emphasize-lines: 7
 
     public class MyDataProvider : IDataProvider
     {

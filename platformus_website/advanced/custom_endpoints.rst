@@ -53,12 +53,12 @@ class) returns Razor views with the view model combined from the data provided b
       }
     }
 
-Now, when our request processor class is added, navigate to the backend’s :guilabel:`Development/Endpoints` section and change the dafault endpoint's
+Now, when our request processor class is added, navigate to the backend’s :guilabel:`Development/Endpoints` section and change the default endpoint's
 request processor C# class name:
 
 .. image:: /images/platformus_website/advanced/custom_endpoints/1.png
 
-Please note, that our new request processor C# class is automatically resolved and added to the drop down list. Click the :guilabel:`Save` button.
+Please note, that our new request processor C# class is automatically resolved and added to the drop-down list. Click the :guilabel:`Save` button.
 
 Now navigate to /en/about and our new request processor will process the request:
 
