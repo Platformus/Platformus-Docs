@@ -10,7 +10,6 @@ so you can extend it, add backend (admin panel) sections, security policies etc.
 There are 2 main purposes to have custom Platformus extensions.
 
 1. You can have all your code in the isolated projects, so CMS itself can be updated independently.
-
 2. You can decrease development time reusing code and combining your apps from the existing parts. It could be useful when you develop a lot of apps
 and have standard approaches of fixing standard tasks. For example, most of the apps have authentication part, some Firebase cloud messaging features.
 Many of them also have chats on SignalR.
