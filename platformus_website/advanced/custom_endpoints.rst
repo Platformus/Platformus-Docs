@@ -134,7 +134,7 @@ The request processor parameter is displayed. Let’s see how to get and use the
       return new ContentResult() { Content = document.ToString(), ContentType = "application/xml" };
     }
 
-Please note that we only use the hardcoded XML here, because converting dynamic object into an XML might look difficult and isn’t a subject of the article.
+Please note that we only use the hardcoded XML here, because converting dynamic object into an XML might look complex and isn’t a subject of the article.
 
 Now if you change the data format in the backend, the endpoint output will also be changed:
 

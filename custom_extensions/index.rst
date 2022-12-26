@@ -3,18 +3,22 @@
 Custom Extensions
 =================
 
-Platformus is based on the `ExtCore framework <https://extcore.net/>`_ and `Magicalizer <https://magicalizer.net/>`_,
-so it is modular and extendable by default. You can follow the `ExtCore documentation <https://docs.extcore.net/>`_
-to understand better how everything works.
+It is not difficult to develop a custom Platformus CMS extension. You can add dependency on any C# project in your Platformus-based application
+like in any other ASP.NET app, controllers and other features will work as you expect. But Platformus provides you with some public API,
+so you can extend it, add backend (admin panel) sections, security policies etc.
 
-While the `Platformus.Website <https://platformus.readthedocs.io/en/latest/extensions/platformus_website.html>`_
-extension contains some frontend requests processing (the `WebsiteMiddleware
-<https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website.Frontend/Middleware/WebsiteMiddleware.cs#L15>`_
-can process requests using the `IEndpoint <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Website/Endpoints/IEndpoint.cs#L12>`_
-interface implementations), your extensions still may contain standard things like controllers or pages.
+There are 2 main purposes to have custom Platformus extensions.
 
-Basic backend UI (HTML, styles, scripts, tag helpers etc.) is defined inside the
-`Platformus.Core.Backend <https://github.com/Platformus/Platformus/tree/master/src/Platformus.Core.Backend>`_
-package of the `Platformus.Core <https://platformus.readthedocs.io/en/latest/extensions/platformus_core.html>`_ extension.
-Using the `IMetadata <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Core.Backend/Metadata.cs#L11>`_
-interface implementations you can replace existing styles and scripts, add new ones, add backend menu sections and items.
+1. You can have all your code in the isolated projects, so CMS itself can be updated independently.
+
+2. You can decrease development time reusing code and combining your apps from the existing parts. It could be useful when you develop a lot of apps
+and have standard approaches of fixing standard tasks. For example, most of the apps have authentication part, some Firebase cloud messaging features.
+Many of them also have chats on SignalR.
+
+As Platformus CMS is built on top of the `ExtCore framework <https://extcore.net/>`_, you can use your custom extension in the different ways:
+as NuGet packages, source code, or even DLL-files.
+
+.. toctree::
+   :titlesonly:
+
+   backend_menu
