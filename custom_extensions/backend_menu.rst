@@ -8,7 +8,7 @@ among other things, the menu items grouped by the menu groups. It is preferable 
 to be able to override only the methods you want:
 
 .. code-block:: cs
-    :emphasize-lines: 6
+    :emphasize-lines: 7
 
     public class MyMetadata : MetadataBase
     {
@@ -34,17 +34,17 @@ to be able to override only the methods you want:
 
 This file can be placed anywhere in the project, it will be resolved automatically by the
 `default implementation <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Core.Backend/Metadata/Providers/DefaultMenuGroupsProvider.cs#L18>`_ of the
-`IMenuGroupsProvider <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Core.Backend/Metadata/Providers/IMenuGroupsProvider.cs#L9>`_ inteface.
+`IMenuGroupsProvider <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Core.Backend/Metadata/Providers/IMenuGroupsProvider.cs#L9>`_ interface.
 
-If the provided menu group’s name matches name of the existing one, the menu items of both will be merged in the single group according to the menu item positions.
+If the provided menu group’s name matches name of the existing one, the menu items of both will be merged into the single group according to the menu item positions.
 
 Let’s look at the `MenuItem <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Core.Backend/Metadata/MenuItem.cs#L8>`_ class’s properties.
 
 ``CssClass`` allows to specify the CSS class that will be added to the menu item HTML tag. Intended to provide a custom icon but can also be used to apply another styling.
 
-``Url`` is the URL where user is navigates when clicks the menu item.
+``Url`` is the URL where user is navigated when clicks the menu item.
 
-``Name`` will be displayed in the menu.
+``Name`` is displayed in the menu.
 
 ``Position`` is used to sort the menu items (and menu groups). Items with a lower position are placed higher.
 
