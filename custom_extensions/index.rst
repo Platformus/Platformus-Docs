@@ -21,3 +21,4 @@ as NuGet packages, source code, or even DLL-files.
    :titlesonly:
 
    backend_menu
+   backend_styles_scripts

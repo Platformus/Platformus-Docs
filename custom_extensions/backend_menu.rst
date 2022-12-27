@@ -1,7 +1,10 @@
-﻿Backend Menu
+﻿.. _backend-menu:
+
+Backend Menu
 ============
 
-All the backend (admin panel) menu groups and items come from the extensions. Each extension can provide one or more implementations of the
+When you develop a custom Platformus CMS extension you might need to add items to the backend (admin panel) menu.
+All the backend menu groups and items are defined in the extensions. Each extension can provide one or more implementations of the
 `IMetadata <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Core.Backend/Metadata/IMetadata.cs#L9>`_ interface which allows to specify,
 among other things, the menu items grouped by the menu groups. It is preferable to use the
 `MetadataBase <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Core.Backend/Metadata/MetadataBase.cs#L9>`_ class
