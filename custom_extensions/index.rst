@@ -22,3 +22,4 @@ as NuGet packages, source code, or even DLL-files.
 
    backend_menu
    backend_styles_scripts
+   embedded_resources
