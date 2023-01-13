@@ -18,4 +18,5 @@ After the resource is embedded, the underlying ExtCore framework will make it av
 if you embed a file as /wwwroot/images/photo.jpg, it will be available as /wwwroot.images.photo.jpg.
 
 Please look how the static files are `embedded <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Core.Backend/Platformus.Core.Backend.csproj#L22>`_
-and then `used <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Core.Backend/Areas/Backend/Styles/checkbox.css#L27>`_ in the standard Platformus.Core extension.
+and then `used <https://github.com/Platformus/Platformus/blob/master/src/Platformus.Core.Backend/Areas/Backend/Styles/checkbox.css#L27>`_
+in the standard :ref:`Platformus.Core <platformus-core>` extension.

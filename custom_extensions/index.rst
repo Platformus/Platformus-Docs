@@ -20,6 +20,7 @@ as NuGet packages, source code, or even DLL-files.
 .. toctree::
    :titlesonly:
 
+   backend_dashboard_widgets
    backend_menu
    backend_styles_scripts
    embedded_resources
