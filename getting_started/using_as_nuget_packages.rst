@@ -1,4 +1,6 @@
-﻿Using as the NuGet Packages
+﻿.. _using-as-the-nuget-packages:
+
+Using as the NuGet Packages
 ===========================
 
 Using Platformus CMS as the NuGet packages is the preferred way

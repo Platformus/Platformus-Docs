@@ -1,6 +1,4 @@
-﻿.. _tutorial-basic-content-management:
-
-Tutorial: Basic Content Management
+﻿Tutorial: Basic Content Management
 ==================================
 
 To understand better how the Platformus content management works, let’s use the

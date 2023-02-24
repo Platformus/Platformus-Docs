@@ -1,5 +1,5 @@
-﻿Tutorial: Creating Custom Extension
-===================================
+﻿Tutorial: Creating a Custom Extension
+=====================================
 
 When you create a Platformus-based application, unless it's something quite simple, you’ll probably need to create your own Platformus extension.
 It will contain everything that is related to your app (entities, models, DTOs, services, APIs, UI etc.) to keep it separated and independent from the basic CMS.
@@ -10,5 +10,5 @@ Creating an extension is simple. We will go through all the aspects and create a
 Preparing the Solution
 ----------------------
 
-Let’s start from the beginning. First, please follow the :ref:`Using as the NuGet Packages <tutorial-basic-content-management>` tutorial
+Let’s start from the beginning. First, please follow the :ref:`Using as the NuGet Packages <using-as-the-nuget-packages>` tutorial
 to create an empty ASP.NET Core Platformus-based web application but keep only the Platformus.WebApplication package dependency as we do not need the others.
