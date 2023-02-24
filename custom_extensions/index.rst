@@ -25,3 +25,4 @@ as NuGet packages, source code, or even DLL-files.
    backend_styles_scripts
    embedded_resources
    styles_and_scripts_minification
+   tutorial_creating_custom_extension

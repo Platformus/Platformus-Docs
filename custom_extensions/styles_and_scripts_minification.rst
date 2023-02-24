@@ -20,7 +20,7 @@ To start using it add the corresponding reference to your *.csproj file:
 Now, add the following lines to the same project file to run the bundling and minification process automatically on build:
 
 .. code-block:: xml
-    :emphasize-lines: 2
+    :emphasize-lines: 1-3
 
     <Target Name="PrecompileScript" BeforeTargets="BeforeBuild">
       <Exec Command="dotnet bundle" />
@@ -29,7 +29,7 @@ Now, add the following lines to the same project file to run the bundling and mi
 Finally, the BundlerMinifier.Core package needs the bundleconfig.json file to be present in the project’s root folder:
 
 .. code-block:: js
-    :emphasize-lines: 3-22
+    :emphasize-lines: 2-22
 
     [
       {
